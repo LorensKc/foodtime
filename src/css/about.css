@@ -1,0 +1,217 @@
+.g-container .g-content {
+  padding: 0 0 350px;
+}
+.g-container .g-content .content-view .inner .block-header {
+  padding-top: 124px;
+  padding-bottom: 47px;
+}
+.g-container .g-content .content-view .inner .current-pos {
+  margin: 0 0 118px;
+}
+.g-container .g-content .content-view .inner .servise-steps {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 69%;
+  margin: 0 auto 102px;
+}
+.g-container .g-content .content-view .inner .servise-steps li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 15%;
+  position: relative;
+}
+.g-container .g-content .content-view .inner .servise-steps li:before {
+  content: '';
+  position: absolute;
+}
+.g-container .g-content .content-view .inner .servise-steps li:first-child:before {
+  top: -7%;
+  right: -187%;
+  width: 326px;
+  height: 99px;
+  background: url('../images/icons/line-short.png') no-repeat;
+}
+.g-container .g-content .content-view .inner .servise-steps li:first-child .step-num {
+  top: -41px;
+  right: -5%;
+}
+.g-container .g-content .content-view .inner .servise-steps li:first-child .icon-wrap {
+  margin: 0 0 17px;
+}
+.g-container .g-content .content-view .inner .servise-steps li:nth-child(2) {
+  margin-top: -29px;
+}
+.g-container .g-content .content-view .inner .servise-steps li:nth-child(2):before {
+  top: -28%;
+  right: -159%;
+  width: 368px;
+  height: 88px;
+  background: url('../images/icons/line-long.png') no-repeat;
+}
+.g-container .g-content .content-view .inner .servise-steps li:nth-child(2) .step-num {
+  top: -30px;
+  right: 49%;
+}
+.g-container .g-content .content-view .inner .servise-steps li:last-child {
+  margin-top: -56px;
+}
+.g-container .g-content .content-view .inner .servise-steps li:last-child .step-num {
+  top: -4px;
+  right: 76%;
+}
+.g-container .g-content .content-view .inner .servise-steps li .step-num {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 79px;
+  height: 79px;
+  background-color: #7d4a55;
+  border-radius: 50%;
+  z-index: 1;
+}
+.g-container .g-content .content-view .inner .servise-steps li .step-num span {
+  color: white;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.g-container .g-content .content-view .inner .servise-steps li .icon-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 0 28px;
+  z-index: 2;
+}
+.g-container .g-content .content-view .inner .servise-steps li .icon-wrap .icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  max-height: 209px;
+}
+.g-container .g-content .content-view .inner .servise-steps li .icon-wrap .icon.choose {
+  width: 146px;
+  height: 209px;
+  background-image: url('../images/icons/choose.png');
+}
+.g-container .g-content .content-view .inner .servise-steps li .icon-wrap .icon.food {
+  width: 158px;
+  height: 117px;
+  background-image: url('../images/icons/food.png');
+}
+.g-container .g-content .content-view .inner .servise-steps li .icon-wrap .icon.wait {
+  width: 144px;
+  height: 144px;
+  background-image: url('../images/icons/wait.png');
+}
+.g-container .g-content .content-view .inner .servise-steps li span {
+  font-size: 18px;
+  font-weight: 700;
+}
+.g-container .g-content .content-view .inner .about-description {
+  max-width: 1200px;
+  padding: 0 255px 0 0px;
+  margin: 0 auto 92px;
+  text-align: left;
+  box-sizing: border-box;
+}
+.g-container .g-content .content-view .inner .about-description p {
+  margin-bottom: 28px;
+  color: #8c8c8c;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 0.4px;
+}
+.g-container .g-content .content-view .inner .about-description p.animate-element {
+  opacity: 0;
+  transform: translateY(50%) scale(0.8);
+  transition: 1.5s cubic-bezier(0.4, 0, 0, 1);
+}
+.g-container .g-content .content-view .inner .about-description p.animate-element.active {
+  opacity: 1;
+  transform: none;
+}
+.g-container .g-content .content-view .inner .advantages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.g-container .g-content .content-view .inner .advantages .title {
+  margin: 0 0 118px;
+  color: #494949;
+  font-size: 60px;
+  font-weight: 100;
+}
+.g-container .g-content .content-view .inner .advantages .title.animate-element {
+  opacity: 0;
+  transform: translateY(50%) translateX(9%) scale(0.8);
+  transition: 1.3s cubic-bezier(0.4, 0, 0, 1);
+}
+.g-container .g-content .content-view .inner .advantages .title.animate-element.active {
+  opacity: 1;
+  transform: none;
+}
+.g-container .g-content .content-view .inner .advantages ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  padding: 0 45px;
+  justify-content: space-between;
+  list-style: none;
+  box-sizing: border-box;
+}
+.g-container .g-content .content-view .inner .advantages ul li {
+  display: flex;
+  flex-direction: column;
+  box-sizing: inherit;
+}
+.g-container .g-content .content-view .inner .advantages ul li.animate-element {
+  opacity: 0;
+  transform: translateY(50%) translateX(9%) scale(0.8);
+  transition: 1.3s cubic-bezier(0.4, 0, 0, 1);
+}
+.g-container .g-content .content-view .inner .advantages ul li.animate-element.active {
+  opacity: 1;
+  transform: none;
+}
+.g-container .g-content .content-view .inner .advantages ul li .image-wrap {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 24px;
+  height: 150px;
+}
+.g-container .g-content .content-view .inner .advantages ul li .subtitle {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23px;
+  text-align: center;
+}
+.g-container .g-footer {
+  position: relative;
+}
+.g-container .g-footer:before {
+  content: '';
+  width: 398px;
+  height: 285px;
+  position: absolute;
+  bottom: 50px;
+  left: 3%;
+  right: 0;
+  margin: 0 auto;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease-out 1s;
+  background: url("../images/icons/footer-plate.png") no-repeat center;
+  background-size: contain;
+}
+.g-container .g-footer.active:before {
+  opacity: 1;
+}

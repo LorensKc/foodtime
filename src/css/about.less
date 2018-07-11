@@ -1,0 +1,253 @@
+.g-container {
+    .g-content {
+        padding: 0 0 350px;
+
+        .content-view  {
+            .inner {
+                .block-header {
+                    padding-top: 124px;
+                    padding-bottom: 47px;
+                }
+
+                .current-pos {
+                    margin: 0 0 118px;
+                }
+
+                .servise-steps { 
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 69%;
+                    margin: 0 auto 102px;
+                    li { 
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        width: 15%;
+                        position: relative;
+                        &:before {
+                            content: '';
+                            position: absolute;
+                        }
+                        &:first-child {
+                            &:before {
+                                top: -7%;
+                                right: -187%;
+                                width: 326px;
+                                height: 99px;
+                                background: url('../images/icons/line-short.png') no-repeat;
+                            }
+                            .step-num {
+                                top: -41px;
+                                right: -5%;
+                            }
+                            .icon-wrap {
+                                margin: 0 0 17px;
+                            }
+                        }
+                        &:nth-child(2) {
+                            margin-top: -29px;
+                            &:before {
+                                top: -28%;
+                                right: -159%;
+                                width: 368px;
+                                height: 88px;
+                                background: url('../images/icons/line-long.png') no-repeat;
+                            }
+
+                            .step-num {
+                                top: -30px;
+                                right: 49%;
+                            }
+                        }
+                        &:last-child {
+                            margin-top: -56px;
+                            .step-num {
+                                top: -4px;
+                                right: 76%;
+                            }
+                        }
+
+                        .step-num {
+                            position: absolute;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 79px;
+                            height: 79px;
+                            background-color: #7d4a55;
+                            border-radius: 50%;
+                            z-index: 1;
+
+                            span {
+                                color: white;
+                                font-size: 48px;
+                                font-weight: 700;
+                                line-height: 24px;
+                                text-transform: uppercase;
+                            }
+                        }
+                        
+
+                        .icon-wrap { 
+                            display: flex;
+                            justify-content: center;
+                            align-items: flex-start;
+                            margin: 0 0 28px;
+                            z-index: 2;
+
+                            .icon {
+                                display: inline-block;
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                background-size: 100%;
+                                max-height: 209px;
+
+                                &.choose {
+                                    width: 146px;
+                                    height: 209px;
+                                    background-image: url('../images/icons/choose.png');
+                                }
+                                &.food {
+                                    width: 158px;
+                                    height: 117px;
+                                    background-image: url('../images/icons/food.png');
+                                }
+                                &.wait {
+                                    width: 144px;
+                                    height: 144px;
+                                    background-image: url('../images/icons/wait.png');
+                                }
+                            }
+                        }
+
+                        span { 
+                            font-size: 18px;
+                            font-weight: 700;
+                        }
+                    }
+                }
+
+                .about-description {
+                    max-width: 1200px;
+                    padding: 0 255px 0 0px;
+                    margin: 0 auto 92px;
+                    text-align: left;
+                    box-sizing: border-box;
+
+                    p {
+                        margin-bottom: 28px;
+                        color: #8c8c8c;
+                        font-size: 16px;
+                        line-height: 27px;
+                        letter-spacing: 0.4px;
+
+                        &.animate-element {
+                            opacity: 0;
+                            transform: translateY(50%) scale(0.8);
+                            transition: 1.5s cubic-bezier(0.4, 0, 0, 1);
+
+                            &.active {
+                                opacity: 1;
+                                transform: none;
+                            }
+                        }
+                    }
+                }
+
+                .advantages {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    
+                    .title {
+                        margin: 0 0 118px;
+                        color: #494949;
+                        font-size: 60px;
+                        font-weight: 100;
+
+                        &.animate-element {
+                            opacity: 0;
+                            transform: translateY(50%) translateX(9%) scale(.8);
+                            transition: 1.3s cubic-bezier(.4,0,0,1);
+                            &.active {
+                                opacity: 1;
+                                transform: none;
+                            }
+                        }
+                    }
+
+                    ul {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        width: 100%;
+                        padding: 0 45px;
+                        justify-content: space-between;
+                        list-style: none;
+                        box-sizing: border-box;
+
+                        li {
+                            display: flex;
+                            flex-direction: column;
+                            box-sizing: inherit;
+
+                            &.animate-element {
+                                opacity: 0;
+                                transform: translateY(50%) translateX(9%) scale(.8);
+                                transition: 1.3s cubic-bezier(.4,0,0,1);
+                                &.active {
+                                    opacity: 1;
+                                    transform: none;
+                                }
+                            }
+
+                            .image-wrap {
+                                display: flex;
+                                align-items: flex-start;
+                                margin-bottom: 24px;
+                                height: 150px;
+                            }
+
+                            .subtitle {
+                                font-size: 18px;
+                                font-weight: 700;
+                                line-height: 23px;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .g-footer {
+        position: relative;
+
+        &:before {
+            content: '';
+            width: 398px;
+            height: 285px;
+            position: absolute;
+            bottom: 50px;
+            left: 3%;
+            right: 0;
+            margin: 0 auto;
+            z-index: 1;
+            opacity: 0;
+            transition: opacity .3s ease-out 1s;
+            background: url("../images/icons/footer-plate.png") no-repeat center;
+            background-size: contain;
+        }
+
+        &.active {
+            &:before {
+                opacity: 1;
+            }
+        }
+    }
+}
