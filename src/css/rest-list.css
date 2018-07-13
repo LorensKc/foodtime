@@ -68,6 +68,7 @@
   border: none;
   background: transparent;
   outline: none;
+  cursor: pointer;
 }
 .g-container .g-content .content-view .inner .rest-list-wrap .filters-wrap .menu-filter-list .categories button.active {
   color: #652533;
@@ -90,6 +91,8 @@
   border: 1px solid #7d4a55;
   background-color: #f6f6f6;
   cursor: pointer;
+  -webkit-appearance: checkbox;
+  -moz-appearance: checkbox;
 }
 .g-container .g-content .content-view .inner .rest-list-wrap .filters-wrap .menu-filter-list ul li span {
   font-size: 16px;
@@ -151,6 +154,8 @@
   justify-content: flex-end;
 }
 .g-container .g-content .content-view .inner .rest-list-wrap .menu-item-container .search-wrap .filter-container .filter-list {
+  border: none;
+  cursor: pointer;
   font-size: 16px;
   font-weight: 100;
   line-height: 32px;

@@ -16,6 +16,19 @@
                     justify-content: center;
                     margin: 113px 0px 99px;
 
+                    &.animate-element {
+                        opacity: 0;
+                        transform: translateY(50%) scale(1, .7);
+                        transition: transform 1.3s cubic-bezier(.4,0,0,1);
+                        will-change: transform, opacity;
+                        transition-property: opacity, transform;
+                        
+                        &.active {
+                            opacity: 1;
+                            transform: none;
+                        }
+                    }
+
                     .title-h2 {
                         margin: 0 84px 0 0px;
                         color: #000000;
@@ -41,6 +54,19 @@
                     width: 40%;
                     margin: 0 auto;
                     padding: 0 8% 0px 0;
+
+                    &.animate-element {
+                        opacity: 0;
+                        transform: translateY(50%) scale(1, .7);
+                        transition: transform 1.3s cubic-bezier(.4,0,0,1);
+                        will-change: transform, opacity;
+                        transition-property: opacity, transform;
+                        
+                        &.active {
+                            opacity: 1;
+                            transform: none;
+                        }
+                    }
 
                     .input-container {
                         display: flex;

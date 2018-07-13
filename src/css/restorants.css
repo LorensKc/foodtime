@@ -4,7 +4,7 @@
 .g-container .g-content.page-with-map {
   padding: 0 0;
 }
-.g-container .g-content .content-view .inner.more-dnwl .button-container {
+.g-container .g-content .content-view .inner.more-dnwl .button-container.menu-page {
   margin: 0 0 0 -80px;
 }
 .g-container .g-content .content-view .inner.more-dnwl .button-container .btn .btn-text {
@@ -25,8 +25,10 @@
 }
 .g-container .g-content .content-view .inner .current-pos span.animate-element {
   opacity: 0;
-  transform: translateY(50%) scale(0.8);
-  transition: 1.3s cubic-bezier(0.4, 0, 0, 1);
+  transform: translateY(50%) scale(1, 0.7);
+  transition: transform 1.3s cubic-bezier(0.4, 0, 0, 1);
+  will-change: transform, opacity;
+  transition-property: opacity, transform;
 }
 .g-container .g-content .content-view .inner .current-pos span.animate-element.active {
   opacity: 1;
@@ -42,8 +44,10 @@
 .g-container .g-content .content-view .inner .rest-title .rest-name.animate-element,
 .g-container .g-content .content-view .inner .rest-title .kitchens.animate-element {
   opacity: 0;
-  transform: translateY(50%) scale(0.8);
-  transition: 1.5s cubic-bezier(0.4, 0, 0, 1);
+  transform: translateY(50%) scale(1, 0.7);
+  transition: transform 1.3s cubic-bezier(0.4, 0, 0, 1);
+  will-change: transform, opacity;
+  transition-property: opacity, transform;
 }
 .g-container .g-content .content-view .inner .rest-title .rest-name.animate-element.active,
 .g-container .g-content .content-view .inner .rest-title .kitchens.animate-element.active {
@@ -73,8 +77,10 @@
 }
 .g-container .g-content .content-view .inner .buttons-wrap .button-container.animate-element {
   opacity: 0;
-  transform: translateY(50%) scale(0.8);
-  transition: 1.5s cubic-bezier(0.4, 0, 0, 1);
+  transform: translateY(50%) scale(1, 0.7);
+  transition: transform 1.3s cubic-bezier(0.4, 0, 0, 1);
+  will-change: transform, opacity;
+  transition-property: opacity, transform;
 }
 .g-container .g-content .content-view .inner .buttons-wrap .button-container.animate-element.active {
   opacity: 1;
@@ -136,8 +142,10 @@
 }
 .g-container .g-content .content-view .inner .stocks-wrap .item-wrap .item.animate-element {
   opacity: 0;
-  transform: translateY(50%) scale(0.8);
-  transition: 1.5s cubic-bezier(0.4, 0, 0, 1);
+  transform: translateY(50%) scale(1, 0.7);
+  transition: transform 1.3s cubic-bezier(0.4, 0, 0, 1);
+  will-change: transform, opacity;
+  transition-property: opacity, transform;
 }
 .g-container .g-content .content-view .inner .stocks-wrap .item-wrap .item.animate-element.active {
   opacity: 1;
@@ -188,6 +196,17 @@
   padding: 0 0px 0 2px;
   margin: 0 0 80px;
 }
+.g-container .g-content .content-view .inner .reviews-wrap .reviews-container.animate-element {
+  opacity: 0;
+  transform: translateY(50%) scale(1, 0.7);
+  transition: transform 1.3s cubic-bezier(0.4, 0, 0, 1);
+  will-change: transform, opacity;
+  transition-property: opacity, transform;
+}
+.g-container .g-content .content-view .inner .reviews-wrap .reviews-container.animate-element.active {
+  opacity: 1;
+  transform: none;
+}
 .g-container .g-content .content-view .inner .reviews-wrap .reviews-container .review-title {
   margin: 0 0 29px;
   font-size: 48px;
@@ -216,6 +235,17 @@
   align-items: center;
   margin: 149px 0 72px;
 }
+.g-container .g-content .content-view .inner .form-title.animate-element {
+  opacity: 0;
+  transform: translateY(50%) scale(1, 0.7);
+  transition: transform 1.3s cubic-bezier(0.4, 0, 0, 1);
+  will-change: transform, opacity;
+  transition-property: opacity, transform;
+}
+.g-container .g-content .content-view .inner .form-title.animate-element.active {
+  opacity: 1;
+  transform: none;
+}
 .g-container .g-content .content-view .inner .form-title span {
   color: #000000;
   font-size: 64px;
@@ -230,6 +260,17 @@
   width: 40%;
   margin: 0 auto;
   padding: 0 144px 0px 0;
+}
+.g-container .g-content .content-view .inner .support-form.animate-element {
+  opacity: 0;
+  transform: translateY(50%) scale(1, 0.7);
+  transition: transform 1.3s cubic-bezier(0.4, 0, 0, 1);
+  will-change: transform, opacity;
+  transition-property: opacity, transform;
+}
+.g-container .g-content .content-view .inner .support-form.animate-element.active {
+  opacity: 1;
+  transform: none;
 }
 .g-container .g-content .content-view .inner .support-form .input-container {
   display: flex;

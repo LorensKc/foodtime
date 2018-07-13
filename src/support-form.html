@@ -117,8 +117,8 @@
                 </div>
                 <div class="block">
                     <div class="inner">
-                        <div class="support-title-container">
-                            <div class="title-h2 bold animate-element">Обращение в службу поддержки</div>
+                        <div class="support-title-container animate-element">
+                            <div class="title-h2 bold">Обращение в службу поддержки</div>
                             <span class="phone-number">+38 (044) 675 25 51</span>
                         </div>
                     </div>
@@ -126,7 +126,7 @@
 
                 <div class="block">
                     <div class="inner">
-                        <form class="support-form" action="">
+                        <form class="support-form animate-element" action="">
                             <div class="input-container" :class="{'active': name.length > 0, 'error': error.name}">
                                 <label class="standart-message" for="name_field">Имя:</label>
                                 <input type="text" name="name" id="name_field" v-model="name" maxlength="50" v-on:blur="validateName()">

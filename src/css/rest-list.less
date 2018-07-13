@@ -79,6 +79,7 @@
                                     border: none;
                                     background: transparent;
                                     outline: none;
+                                    cursor: pointer;
                                     &.active {
                                         color: #652533;
                                         font-weight: 700;
@@ -103,6 +104,8 @@
                                         border: 1px solid #7d4a55;
                                         background-color: #f6f6f6;
                                         cursor: pointer;
+                                        -webkit-appearance: checkbox;
+                                        -moz-appearance: checkbox;
                                     }
 
                                     span { 
@@ -173,7 +176,9 @@
                                 flex-direction: row;
                                 justify-content: flex-end;
 
-                                .filter-list { 
+                                .filter-list {
+                                    border: none;
+                                    cursor: pointer;
                                     font-size: 16px;
                                     font-weight: 100;
                                     line-height: 32px;

@@ -9,8 +9,9 @@
             .inner {
                 &.more-dnwl {
                     .button-container {
-                        // margin: 4.8% 7.5% 0 0;
-                        margin: 0 0 0 -80px; //menu-page
+                        &.menu-page {
+                            margin: 0 0 0 -80px; //menu-page
+                        }
 
                         .btn {
                             .btn-text {
@@ -34,10 +35,13 @@
                         font-weight: 100;
                         letter-spacing: 0.32px;
 
-                        &.animate-element {
+                       &.animate-element {
                             opacity: 0;
-                            transform: translateY(50%) scale(.8);
-                            transition: 1.3s cubic-bezier(.4,0,0,1);
+                            transform: translateY(50%) scale(1, .7);
+                            transition: transform 1.3s cubic-bezier(.4,0,0,1);
+                            will-change: transform, opacity;
+                            transition-property: opacity, transform;
+                            
                             &.active {
                                 opacity: 1;
                                 transform: none;
@@ -55,15 +59,17 @@
 
                     .rest-name, .kitchens {
                         &.animate-element {
-                                opacity: 0;
-                                transform: translateY(50%) scale(.8);
-                                transition: 1.5s cubic-bezier(.4,0,0,1);
-
-                                &.active {
-                                    opacity: 1;
-                                    transform: none;
-                                }
+                            opacity: 0;
+                            transform: translateY(50%) scale(1, .7);
+                            transition: transform 1.3s cubic-bezier(.4,0,0,1);
+                            will-change: transform, opacity;
+                            transition-property: opacity, transform;
+                            
+                            &.active {
+                                opacity: 1;
+                                transform: none;
                             }
+                        }
                     }
 
                     .rest-name {
@@ -92,9 +98,11 @@
 
                         &.animate-element {
                             opacity: 0;
-                            transform: translateY(50%) scale(.8);
-                            transition: 1.5s cubic-bezier(.4,0,0,1);
-
+                            transform: translateY(50%) scale(1, .7);
+                            transition: transform 1.3s cubic-bezier(.4,0,0,1);
+                            will-change: transform, opacity;
+                            transition-property: opacity, transform;
+                            
                             &.active {
                                 opacity: 1;
                                 transform: none;
@@ -166,9 +174,11 @@
 
                             &.animate-element {
                                 opacity: 0;
-                                transform: translateY(50%) scale(.8);
-                                transition: 1.5s cubic-bezier(.4,0,0,1);
-
+                                transform: translateY(50%) scale(1, .7);
+                                transition: transform 1.3s cubic-bezier(.4,0,0,1);
+                                will-change: transform, opacity;
+                                transition-property: opacity, transform;
+                                
                                 &.active {
                                     opacity: 1;
                                     transform: none;
@@ -229,6 +239,19 @@
                         padding: 0 0px 0 2px;
                         margin: 0 0 80px;
 
+                        &.animate-element {
+                            opacity: 0;
+                            transform: translateY(50%) scale(1, .7);
+                            transition: transform 1.3s cubic-bezier(.4,0,0,1);
+                            will-change: transform, opacity;
+                            transition-property: opacity, transform;
+                            
+                            &.active {
+                                opacity: 1;
+                                transform: none;
+                            }
+                        }
+
                         .review-title {
                             margin: 0 0 29px;
                             font-size: 48px;
@@ -262,6 +285,19 @@
                     align-items: center;
                     margin: 149px 0 72px;
 
+                    &.animate-element {
+                        opacity: 0;
+                        transform: translateY(50%) scale(1, .7);
+                        transition: transform 1.3s cubic-bezier(.4,0,0,1);
+                        will-change: transform, opacity;
+                        transition-property: opacity, transform;
+                        
+                        &.active {
+                            opacity: 1;
+                            transform: none;
+                        }
+                    }
+
                     span {
                         color: #000000;
                         font-size: 64px;
@@ -278,6 +314,19 @@
                     width: 40%;
                     margin: 0 auto;
                     padding: 0 144px 0px 0;
+
+                    &.animate-element {
+                        opacity: 0;
+                        transform: translateY(50%) scale(1, .7);
+                        transition: transform 1.3s cubic-bezier(.4,0,0,1);
+                        will-change: transform, opacity;
+                        transition-property: opacity, transform;
+                        
+                        &.active {
+                            opacity: 1;
+                            transform: none;
+                        }
+                    }
 
                     .input-container {
                         display: flex;

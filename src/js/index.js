@@ -184,9 +184,7 @@ window.onload = function() {
 		const trashModal = document.getElementById("trash-window");
 		const closeTrash = document.getElementById("close-trash");
 
-		headerShopingCard.addEventListener(
-			"click",
-			() => {
+		headerShopingCard.addEventListener("click", () => {
 				if (!body.classList.contains("lock")) {
 					body.className += " lock";
 				}
@@ -194,9 +192,7 @@ window.onload = function() {
 				if (!trashModal.classList.contains("open")) {
 					trashModal.className += " open";
 				}
-			},
-			false
-		);
+		}, false);
 
 		closeTrash.addEventListener('click', () => {
 			if (body.classList.contains("lock")) {
@@ -207,6 +203,8 @@ window.onload = function() {
 				trashModal.classList.remove("open");
 			}
 		}, false);
+
+		$('select').niceSelect();
 	});
 };
 

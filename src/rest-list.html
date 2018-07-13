@@ -40,9 +40,11 @@
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
     <link href="css/rest-list.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/nice-select.css">
     <link href="css/rangeslider.css" rel="stylesheet">
     <link href="css/index-media.css" rel="stylesheet">
 
+    <script src="js/jquery.nice-select.js"></script>
     <script src="js/rangeslider.js" defer></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/index.js"></script>
@@ -107,14 +109,14 @@
                 <div class="block">
                     <div class="inner">
                         <div class="block-header _align-center">
-                            <div class="title-h1 animate-element">Рестораны</div>
+                            <div class="title-h1">Рестораны</div>
                         </div>
                     </div>
                 </div>
                 <div class="block">
                     <div class="inner">
                         <div class="current-pos">
-                            <span class="animate-element">Главная / Рестораны</span>
+                            <span class="">Главная / Рестораны</span>
                         </div>
                     </div>
                 </div>
@@ -135,35 +137,35 @@
                                     <div class="filter-title">Фильтры:</div>
                                     <ul>
                                         <li>
-                                            <input type="checkbox" checked>
+                                            <input type="checkbox" >
                                             <span>Пицца</span>
                                         </li>
                                         <li>
-                                            <input type="checkbox" checked>
+                                            <input type="checkbox" >
                                             <span>Суши</span>
                                         </li>
                                         <li>
-                                            <input type="checkbox" checked>
+                                            <input type="checkbox" >
                                             <span>Бургеры</span>
                                         </li>
                                         <li>
-                                            <input type="checkbox" checked>
+                                            <input type="checkbox" >
                                             <span>Шашлык</span>
                                         </li>
                                         <li>
-                                            <input type="checkbox" checked>
+                                            <input type="checkbox" >
                                             <span>Китайская кухня</span>
                                         </li>
                                         <li>
-                                            <input type="checkbox" checked>
+                                            <input type="checkbox" >
                                             <span>Европейская кухня</span>
                                         </li>
                                         <li>
-                                            <input type="checkbox" checked>
+                                            <input type="checkbox" >
                                             <span>Украинская кухня</span>
                                         </li>
                                         <li>
-                                            <input type="checkbox" checked>
+                                            <input type="checkbox" >
                                             <span>Пироги</span>
                                         </li>
                                     </ul>
@@ -177,23 +179,23 @@
                                     <div class="filter-title">Критерии:</div>
                                     <ul>
                                         <li>
-                                            <input type="radio" value="0">
+                                            <input type="checkbox">
                                             <span>Бесплатная доставка</span>
                                         </li>
                                         <li>
-                                            <input type="radio">
+                                            <input type="checkbox">
                                             <span>Акции</span>
                                         </li>
                                         <li>
-                                            <input type="radio">
+                                            <input type="checkbox">
                                             <span>Оплата картой-онлайн</span>
                                         </li>
                                         <li>
-                                            <input type="radio">
+                                            <input type="checkbox">
                                             <span>Оплата картой курьеру</span>
                                         </li>
                                         <li>
-                                            <input type="radio">
+                                            <input type="checkbox">
                                             <span>Новые</span>
                                         </li>
                                 
@@ -237,7 +239,13 @@
                                         </form>
                                     </div>
                                     <div class="filter-container">
-                                        <div class="filter-list">по умолчанию</div>
+                                        <select class="filter-list">
+                                            <option data-display="Select">по умолчанию</option>
+                                            <option value="1">test option 1</option>
+                                            <option value="2">test option 2</option>
+                                            <option value="3">test option 3</option>
+                                            <option value="4">test option 4</option>
+                                        </select>
                                         <div class="filter-tabs">
                                             <a href="#" class="left-tab active">Все</a>
                                             <a href="#" class="right-tab">Открытые</a>
@@ -469,38 +477,50 @@
                  <div class="trash-modal-form">
                      <div class="trash-modal-form-inner trash-modal-form-left">
                         <div class="trash-modal-form-left-inners">
-                            <div class="trash-modal-form-left-inner">
-                                <label class="modal-input-label" for="modal-input-name">Имя:</label>
-                                <input type="text" name="name" class="modal-input" id="modal-input-name">
-                            </div>
-                            <div class="trash-modal-form-left-inner">
-                                <label class="modal-input-label" for="modal-input-tel">Телефон:</label>
-                                <input type="text" name="name" class="modal-input" id="modal-input-tel">
-                            </div>
-                            <div class="trash-modal-form-left-inner">
-                                <label class="modal-input-label" for="modal-input-email">Email:</label>
-                                <input type="text" name="name" class="modal-input" id="modal-input-email">
+                            <div class="general-info-wrap">
+                                <div class="trash-modal-form-left-inner">
+                                    <label class="modal-input-label" for="modal-input-name">Имя:</label>
+                                    <input type="text" name="name" class="modal-input normal-width" id="modal-input-name">
+                                </div>
+                                <div class="trash-modal-form-left-inner">
+                                    <label class="modal-input-label" for="modal-input-tel">Телефон:</label>
+                                    <input type="text" name="name" class="modal-input normal-width" id="modal-input-tel">
+                                </div>
+                                <div class="trash-modal-form-left-inner">
+                                    <label class="modal-input-label" for="modal-input-email">Email:</label>
+                                    <input type="text" name="name" class="modal-input normal-width" id="modal-input-email">
+                                </div>
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" name="" id="no-email">
+                                    <label for="no-email">Не хочу оставлять свой Email</label>
+                                </div>
                             </div>
                             <div class="adress-wrap">
                                 <div class="trash-modal-form-left-inner">
                                     <label class="modal-input-label" for="modal-input-email">Адрес:</label>
-                                    <input type="text" name="name" class="modal-input" id="modal-input-email">
+                                    <input type="text" name="name" class="modal-input normal-width" id="modal-input-adress">
                                 </div>
-                                <div class="trash-modal-form-left-inner">
-                                    <input type="text" name="name" class="modal-input" id="modal-input-email">
+                                <div class="trash-modal-form-left-inner auto-width">
+                                    <input type="text" name="name" class="modal-input min-width" id="modal-input-house">
                                 </div>
-                                <div class="trash-modal-form-left-inner">
-                                    <input type="text" name="name" class="modal-input" id="modal-input-email">
+                                <div class="trash-modal-form-left-inner auto-width">
+                                    <input type="text" name="name" class="modal-input min-width" id="modal-input-appart">
                                 </div>
                             </div>
                             <div class="payment-type-container">
                                 <div class="trash-modal-form-left-inner">
-                                    <label class="modal-input-label" for="modal-input-email">Тип оплаты:</label>
-                                    <input type="text" name="name" class="modal-input" id="modal-input-email">
+                                    <label class="modal-input-label" for="payment-type">Тип оплаты:</label>
+                                    <select name="" id="payment-type" class="normal-width">
+                                        <option data-display="Select">Наличными</option>
+                                        <option value="">Банковской картой</option>
+                                        <option value="">PayPal</option>
+                                        <option value="">Приват24</option>
+                                    </select>
+                                    
                                 </div>
-                                <div class="trash-modal-form-left-inner">
+                                <div class="trash-modal-form-left-inner auto-width">
                                     <label class="modal-input-label" for="modal-input-email">Сдача с:</label>
-                                    <input type="text" name="name" class="modal-input" id="modal-input-email">
+                                    <input type="text" name="name" class="modal-input min-width">
                                     <span class="currency">грн</span>
                                 </div>
                             </div>
@@ -510,7 +530,7 @@
                         </div>
                      </div>
                     <div class="trash-modal-form-inner trash-modal-form-right">
-                        <div class="title-container">
+                        <div class="form-right-title">
                             <div class="title">Ваш заказ</div>
                             <button class="edit-btn">Редактировать</button>
                         </div>
@@ -518,19 +538,19 @@
                             <ul>
                                 <li class="price-item">
                                     <div class="item-name">Лапша “Удон с курицей” 350г</div>
-                                    <div class="item-cost">127. 00 грн</div>
+                                    <div class="item-cost">127. 00 <span>грн</span></div>
                                 </li>
                                 <li class="price-item">
                                     <div class="item-name">Лапша “Удон с курицей” 350г</div>
-                                    <div class="item-cost">127. 00 грн</div>
+                                    <div class="item-cost">127. 00 <span>грн</span></div>
                                 </li>
                                 <li class="price-item">
                                     <div class="item-name">Лапша “Удон с курицей” 350г</div>
-                                    <div class="item-cost">127. 00 грн</div>
+                                    <div class="item-cost">127. 00 <span>грн</span></div>
                                 </li>
                                 <li class="price-item">
                                     <div class="item-name">Лапша “Удон с курицей” 350г</div>
-                                    <div class="item-cost">127. 00 грн</div>
+                                    <div class="item-cost">127. 00 <span>грн</span></div>
                                 </li>
                             </ul>
                         </div>
@@ -540,7 +560,7 @@
                                 <span class="price">256.00 грн</span>
                             </div>
                             <div class="delivery">
-                                <span class="title">Сумма заказа:</span>
+                                <span class="title">Доставка:</span>
                                 <span class="price">00.00 грн</span>
                             </div>
                             <div class="total-payment-container">
