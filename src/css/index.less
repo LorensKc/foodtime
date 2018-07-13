@@ -158,7 +158,6 @@
 * {
     margin: 0;
     padding: 0;
-    transition: all ease .4s;
 }
 
 *,
@@ -896,6 +895,7 @@ a:hover {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
+        border: none;
 
         &:hover {
             background-color: rgba(152, 109, 118, .8);
@@ -1641,8 +1641,171 @@ a:hover {
     }
 }
 
+body.lock {
+    height: 100%;
+    overflow: hidden;
+}
+
+.trash-window {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.trash-window.open {
+    pointer-events: all;
+}
+
+.trash-window-overlay,
+.trash-window-modal-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.trash-window-overlay {
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.75);
+    transition: opacity 1.5s cubic-bezier(0.4, 0, 0, 1);
+}
+
+.trash-window.open .trash-window-overlay {
+    opacity: 1;
+}
+
+.trash-window-modal-overlay {
+    z-index: 2;
+    overflow: hidden;
+}
+
+.trash-window-modal {
+    width: 1132px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transform: translateY(75%);
+    transition: transform 1.5s cubic-bezier(0.4, 0, 0, 1);
+}
+
+.trash-window.open .trash-window-modal {
+    transform: translateY(-50%);
+}
+
+.trash-modal-title {
+    width: 100%;
+    position: relative;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.trash-modal-title p {
+    font-size: 50px;
+    color: white;
+}
+
+.trash-modal-form {
+    width: 100%;
+    position: relative;
+    background: white;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.trash-modal-form-inner {
+    position: relative;
+}
+
+.trash-modal-form-left {
+    width: 70%;
+}
+
+.trash-modal-form-right {
+    width: 30%;
+    padding: 60px 50px 50px 90px;
+    background: linear-gradient(to right, rgba(0,0,0,0.075) 0%,rgba(0,0,0,0) 39%,rgba(0,0,0,0) 100%);
+}
+
+.trash-modal-form-left-inners {
+    width: 100%;
+    position: relative;
+    padding: 50px 50px 0;
+    margin: 0 0 50px;
+}
+
+.trash-modal-form-left-inner {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin: 0 0 20px;
+}
+
+.modal-input-label {
+    width: 100px;
+    padding: 0 20px 0 0;
+    font-size: 16px;
+}
+
+.modal-input {
+    width: calc(~"60% - 100px");
+    height: 30px;
+}
+
+.trash-modal-form-left-button {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+
+.modal-button {
+    width: auto;
+    display: inline-block;
+    border: none;
+    background: #652533;
+    color: white;
+    font-size: 16px;
+    padding: 20px 40px;
+}
+
+.close-trash {
+    font-size: 16px;
+    color: white;
+    padding: 20px 40px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 1.5s cubic-bezier(0.4, 0, 0, 1);
+}
+
+.trash-window.open .close-trash {
+    opacity: 1;
+}
+
 // @import 'restorants.css';
 // @import 'news.css';
-
+// @import '404.css';
+// @import 'about.css';
+// @import 'animate.css';
+// @import 'rest-list.css';
+// @import 'support.css';
 // @import 'index-media.css';
 @import 'rangeslider.css';

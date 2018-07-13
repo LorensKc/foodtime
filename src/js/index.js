@@ -167,11 +167,46 @@ window.onload = function() {
 
 		//rangerSlider
 
+		const priceValue = document.getElementsByClassName("price-value")[0];
+
+		$(document).on("input", 'input[type="range"]', function(e) {
+			priceValue.innerHTML = e.currentTarget.value;
+		});
+
 		$('input[type="range"]').rangeslider({
-			polyfill: true,
+			polyfill: false,
 			horizontalClass: "rangeslider--horizontal",
 			handleClass: "rangeslider__handle"
 		});
+
+		const body = document.getElementsByTagName("body")[0];
+		const headerShopingCard = document.getElementById("header-shopping-cart");
+		const trashModal = document.getElementById("trash-window");
+		const closeTrash = document.getElementById("close-trash");
+
+		headerShopingCard.addEventListener(
+			"click",
+			() => {
+				if (!body.classList.contains("lock")) {
+					body.className += " lock";
+				}
+
+				if (!trashModal.classList.contains("open")) {
+					trashModal.className += " open";
+				}
+			},
+			false
+		);
+
+		closeTrash.addEventListener('click', () => {
+			if (body.classList.contains("lock")) {
+				body.classList.remove("lock");
+			}
+
+			if (trashModal.classList.contains("open")) {
+				trashModal.classList.remove("open");
+			}
+		}, false);
 	});
 };
 

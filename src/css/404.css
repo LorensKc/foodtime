@@ -15,15 +15,8 @@
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  margin: 0 auto;
+  margin: 86px auto 0;
   width: 35%;
-}
-.g-container .g-content .content-view .inner .error-wrap .title {
-  color: #652533;
-  font-size: 331px;
-  font-weight: 700;
-  line-height: 1em;
-  letter-spacing: 5px;
 }
 .g-container .g-content .content-view .inner .error-wrap .description {
   margin: 4.7% 0 0;

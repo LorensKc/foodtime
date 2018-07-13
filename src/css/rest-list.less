@@ -51,6 +51,12 @@
                             justify-content: flex-start;
                             margin: 0 0 25px;
 
+                            &:last-child {
+                                .nav-buttons {
+                                    border: none;
+                                }
+                            }
+
                             .filter-title { 
                                 margin: 0 0 15px;
                                 font-size: 16px;
@@ -65,10 +71,14 @@
                                 justify-content: flex-start;
                                 margin: 0 0 25px;
 
-                                span {
+                                button {
+                                    display: flex;
                                     font-size: 16px;
                                     font-weight: 100;
                                     line-height: 32px;
+                                    border: none;
+                                    background: transparent;
+                                    outline: none;
                                     &.active {
                                         color: #652533;
                                         font-weight: 700;
@@ -114,7 +124,11 @@
                                 padding: 0 0 27px;
                                 border-bottom: 1px solid gray;
 
-                                span {
+                                button {
+                                    background: transparent;
+                                    border: none;
+                                    outline: none;
+                                    cursor: pointer;
                                     margin: 0 15px;
                                     color: #652533;
                                     font-size: 15px;
@@ -151,12 +165,6 @@
 
                                 .search { 
                                     width: 60%;
-                                    .input-wrap { 
-                                        
-                                        input { 
-
-                                        }
-                                    }
                                 }
                             }
 
@@ -175,13 +183,14 @@
                                 .filter-tabs {
                                     margin: 0 0 0 66px;
                                     
-                                   span {
+                                    a {
                                         margin: 0 5px;
                                         color: #000000;
                                         font-size: 16px;
                                         font-weight: 100;
                                         line-height: 32px;
                                         letter-spacing: 0.32px;
+                                        text-decoration: none;
 
                                         &.active {
                                             color: #652533;
@@ -210,12 +219,13 @@
                                 background-color: #ffffff;
                                 box-sizing: border-box;
                                 box-shadow: 0 6px 15px 0 rgba(0,0,0,0.26);
+                                text-decoration: none;
 
-                                &:nth-child(2), &:nth-child(4) {
-                                    .image {
-                                        background-color: #d5bc74;
-                                    }
-                                }
+                                // &:nth-child(2), &:nth-child(4) {
+                                //     .image {
+                                //         background-color: #d5bc74;
+                                //     }
+                                // }
 
                                 .image { 
                                     display: flex;
@@ -228,7 +238,8 @@
                                     text-align: center;
                                     
                                     img {
-                                        width: 80%;
+                                        width: 100%;
+                                        height: 100%;;
                                     }
                                 }
 
@@ -344,3 +355,4 @@
         }
     }
 }
+

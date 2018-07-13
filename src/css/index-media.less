@@ -82,6 +82,10 @@
                             }
                         }
                     }
+
+                    .error-wrap {
+                        width: 41%;
+                    }
                 }
             }
         }
@@ -153,6 +157,10 @@
                                 }
                             }
                         }
+                    }
+
+                    .error-wrap {
+                        width: 46%;
                     }
                 }
             }
@@ -338,6 +346,8 @@
                             }
                         }
                     }
+
+                    
                 }
             }
         }
@@ -565,6 +575,10 @@
                             }
                         }
                     }
+
+                    .error-wrap {
+                        width: 57%;
+                    }
                 }
             }
         }
@@ -760,6 +774,10 @@
                             }
                         }
                     }
+
+                    .error-wrap {
+                        width: 62%;
+                    }
                 }
             }
         }
@@ -938,138 +956,142 @@
     .g-container {
         
         .g-content {
-        .content-view {
-            .inner {
-                &.more-dnwl {
-                    .button-container {
-                        .btn {
-                            &:before {
-                                top: calc(~"50% - 52px");
+            .content-view {
+                .inner {
+                    &.more-dnwl {
+                        .button-container {
+                            .btn {
+                                &:before {
+                                    top: calc(~"50% - 52px");
+                                }
                             }
                         }
                     }
-                }
 
-                .buttons-wrap {
-                    .button-container {
-                        margin: 0 15px;
+                    .buttons-wrap {
+                        .button-container {
+                            margin: 0 15px;
 
-                        .btn {
-                            width: 162px;
+                            .btn {
+                                width: 162px;
 
-                            .btn-text {
+                                .btn-text {
+                                    font-size: 14px;
+                                    font-weight: 600;
+                                    transform: none;
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                    }
+
+                    .stocks-wrap {
+                        .item-wrap {
+                            .item {
+                                width: 370px;
+                                height: 210px;
+                                
+                                .image-wrap {
+                                    width: 170px;
+                                }
+
+                                .content-wrap {
+                                    width: calc(~"100% - 170px");
+
+                                    .title {
+                                        margin-bottom: 14px;
+                                        font-size: 15px;
+                                    }
+
+                                    .desc {
+                                        font-size: 11px;
+                                    }
+
+                                    .link {
+                                        padding-top: 13px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .support-title-container {
+                        .title-h2 {
+                            font-size: 27px;
+                            margin: 0 30px 0 0px;
+                        }
+
+                        .phone-number {
+                            font-size: 21px;
+                        }
+                    }
+
+                    .support-form {
+                        width: 80%;
+                        padding: 0px 10% 0px 0;
+                        &.reviews-form {
+                            width: 60%;
+                        }
+
+                        .input-container {
+                            width: 95%;
+                            margin: 0 auto 39px;
+
+                            .standart-message {
+                                font-size: 16px;
+                            }
+
+                            input, textarea {
+                                width: 350px;
+                                padding: 11px 10px;
+                            }
+                        }
+                    }
+
+                    .reviews-wrap {
+                        .reviews-container {
+                            margin: 0 0 60px;
+                            .review-title {
+                                margin: 0 0 20px;
+                                font-size: 24px;
+                                line-height: 30px;
+                            }
+
+                            .review-text {
+                                padding: 0 0px 0 0;
                                 font-size: 14px;
-                                font-weight: 600;
-                                transform: none;
-                                opacity: 1;
+                            }
+
+                            .signature-container {
+                                font-size: 15px;
                             }
                         }
                     }
-                }
 
-                .stocks-wrap {
-                    .item-wrap {
-                        .item {
-                            width: 370px;
-                            height: 210px;
-                            
-                            .image-wrap {
-                                width: 170px;
-                            }
+                    .menu-wrap {
+                        padding: 0;
 
+                        .menu-filter-list {
+                            width: 33%;
+                        }
+
+                        .menu-item-container {
+                            width: 68%;
                             .content-wrap {
-                                width: calc(~"100% - 170px");
-
-                                .title {
-                                    margin-bottom: 14px;
-                                    font-size: 15px;
-                                }
-
-                                .desc {
-                                    font-size: 11px;
-                                }
-
-                                .link {
-                                    padding-top: 13px;
+                                .menu-item {
+                                    width: 45%;
+                                    margin: 0 1% 6.2%;
                                 }
                             }
                         }
                     }
-                }
 
-                .support-title-container {
-                    .title-h2 {
-                        font-size: 27px;
-                        margin: 0 30px 0 0px;
-                    }
-
-                    .phone-number {
-                        font-size: 21px;
-                    }
-                }
-
-                .support-form {
-                    width: 80%;
-                    padding: 0px 10% 0px 0;
-                    &.reviews-form {
-                        width: 60%;
-                    }
-
-                    .input-container {
-                        width: 95%;
-                        margin: 0 auto 39px;
-
-                        .standart-message {
-                            font-size: 16px;
-                        }
-
-                        input, textarea {
-                            width: 350px;
-                            padding: 11px 10px;
-                        }
-                    }
-                }
-
-                .reviews-wrap {
-                    .reviews-container {
-                        margin: 0 0 60px;
-                        .review-title {
-                            margin: 0 0 20px;
-                            font-size: 24px;
-                            line-height: 30px;
-                        }
-
-                        .review-text {
-                            padding: 0 0px 0 0;
-                            font-size: 14px;
-                        }
-
-                        .signature-container {
-                            font-size: 15px;
-                        }
-                    }
-                }
-
-                .menu-wrap {
-                    padding: 0;
-
-                    .menu-filter-list {
-                        width: 33%;
-                    }
-
-                    .menu-item-container {
-                        width: 68%;
-                        .content-wrap {
-                            .menu-item {
-                                width: 45%;
-                                margin: 0 1% 6.2%;
-                            }
-                        }
+                    .error-wrap {
+                        width: 74%;
                     }
                 }
             }
         }
-    }
 
         .g-footer {
             &:before {
@@ -1327,6 +1349,10 @@
                         .menu-item-container{
                             width: 100%;
                         }
+                    }
+
+                    .error-wrap {
+                        width: 100%;
                     }
                 }
             }
@@ -1598,6 +1624,21 @@
                                     }
                                 }
                             }
+                        }
+                    }
+
+                    .error-wrap {
+                        .error-img {
+                            img {
+                                width: 80%;
+                                margin: 0 auto;
+                                display: block;
+                            }
+                        }
+
+                        .description {
+                            font-size: 15px;
+                            line-height: 24px;
                         }
                     }
                 }

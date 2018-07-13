@@ -40,6 +40,7 @@
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
     <link href="css/rest-list.css" rel="stylesheet">
+    <link href="css/rangeslider.css" rel="stylesheet">
     <link href="css/index-media.css" rel="stylesheet">
 
     <script src="js/rangeslider.js" defer></script>
@@ -87,7 +88,7 @@
                                 </svg>
                             </div>
                         </a>
-                        <div class="header-shopping-cart">
+                        <button type="button" class="header-shopping-cart" id="header-shopping-cart">
                             <div class="icon-wrap">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 57.07 50.55">
                                     <path d="M21.32 41.06a4.75 4.75 0 1 1-4.74 4.74 4.75 4.75 0 0 1 4.74-4.74zM42 41.06a4.75 4.75 0 1 1-4.75 4.74A4.74 4.74 0 0 1 42 41.06zM54.11 15.05H24.83a2.32 2.32 0 0 0-1.73 2.3 2.61 2.61 0 0 0 1.73 2.46h26.25l-1.47 5H23.8a2.14 2.14 0 0 0-1.61 2.13 2.44 2.44 0 0 0 1.61 2.3h24.5l-1.38 4.66H20.27l-1.76-14.09-.58-4.76s-.51-4.38-.8-6.2S12.28 4.75 2.5.14c-2.3-1-4.23 3.25 0 5.45l7.72 3.6s1.79 1.05 1.94 2.44 3.29 24.62 3.29 24.62.13 3.23 3.06 3.23H48a3.13 3.13 0 0 0 2.95-2.57l5.83-17.33s1.69-4.53-2.67-4.53z"
@@ -95,7 +96,7 @@
                                 </svg>
                             </div>
                             <div class="button-text">корзина пуста</div>
-                        </div>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -125,8 +126,8 @@
                                 <div class="menu-filter-list">
                                     <div class="filter-title">Категории:</div>
                                     <div class="categories">
-                                        <span class="rests active">Рестораны</span>
-                                        <span class="stores">Магазины</span>
+                                        <button class="rests active">Рестораны</button>
+                                        <button class="stores">Магазины</button>
                                     </div>
                                 </div>
                                 
@@ -134,41 +135,41 @@
                                     <div class="filter-title">Фильтры:</div>
                                     <ul>
                                         <li>
-                                            <input type="radio" value="0">
+                                            <input type="checkbox" checked>
                                             <span>Пицца</span>
                                         </li>
                                         <li>
-                                            <input type="radio">
+                                            <input type="checkbox" checked>
                                             <span>Суши</span>
                                         </li>
                                         <li>
-                                            <input type="radio">
+                                            <input type="checkbox" checked>
                                             <span>Бургеры</span>
                                         </li>
                                         <li>
-                                            <input type="radio">
+                                            <input type="checkbox" checked>
                                             <span>Шашлык</span>
                                         </li>
                                         <li>
-                                            <input type="radio">
+                                            <input type="checkbox" checked>
                                             <span>Китайская кухня</span>
                                         </li>
                                         <li>
-                                            <input type="radio">
+                                            <input type="checkbox" checked>
                                             <span>Европейская кухня</span>
                                         </li>
                                         <li>
-                                            <input type="radio">
+                                            <input type="checkbox" checked>
                                             <span>Украинская кухня</span>
                                         </li>
                                         <li>
-                                            <input type="radio">
+                                            <input type="checkbox" checked>
                                             <span>Пироги</span>
                                         </li>
                                     </ul>
                                     <div class="nav-buttons">
-                                        <span>Применить</span>
-                                        <span>Сбросить</span>
+                                        <button>Применить</button>
+                                        <button>Сбросить</button>
                                     </div>
                                 </div>
                                 
@@ -198,8 +199,8 @@
                                 
                                     </ul>
                                     <div class="nav-buttons">
-                                        <span>Применить</span>
-                                        <span>Сбросить</span>
+                                        <button>Применить</button>
+                                        <button>Сбросить</button>
                                     </div>
                                 </div>
 
@@ -207,11 +208,14 @@
                                     <div class="filter-title">Минимальная сумма заказа:</div>
                                     <div class="price-line">
                                         <input type="range" min="10" max="3500" step="10" value="200" data-orientation="horizontal">
-                                        <div class="price">2000 грн</div>
+                                        <div class="price">
+                                            <span class="price-value">10</span>
+                                            <span class="price-currency">грн</span>
+                                        </div>
                                     </div>
                                     <div class="nav-buttons">
-                                        <span>Применить</span>
-                                        <span>Сбросить</span>
+                                        <button>Применить</button>
+                                        <button>Сбросить</button>
                                     </div>
                                 </div>
                             </div>
@@ -235,14 +239,14 @@
                                     <div class="filter-container">
                                         <div class="filter-list">по умолчанию</div>
                                         <div class="filter-tabs">
-                                            <span class="left-tab active">Все</span>
-                                            <span class="right-tab">Открытые</span>
+                                            <a href="#" class="left-tab active">Все</a>
+                                            <a href="#" class="right-tab">Открытые</a>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="content-wrap">
-                                    <div class="menu-item">
+                                    <a href="#" class="menu-item">
                                         <div class="image rest-img">
                                             <img src="images/restaurants/cooper.png" alt="">
                                         </div>
@@ -279,9 +283,9 @@
                                                 </p>
                                             </div>
                                         </div>
-                                    </div>
+                                    </a>
 
-                                    <div class="menu-item">
+                                    <a href="#" class="menu-item">
                                         <div class="image rest-img">
                                             <img src="images/restaurants/fishman.jpg" alt="">
                                             
@@ -322,9 +326,9 @@
                                                 </p>
                                             </div>
                                         </div>
-                                    </div>
+                                    </a>
 
-                                    <div class="menu-item">
+                                    <a href="#" class="menu-item">
                                         <div class="image rest-img">
                                             <img src="images/restaurants/cooper.png" alt="">
                                         </div>
@@ -364,9 +368,9 @@
                                                 </p>
                                             </div>
                                         </div>
-                                    </div>
+                                    </a>
 
-                                    <div class="menu-item">
+                                    <a href="#" class="menu-item">
                                         <div class="image rest-img">
                                             <img src="images/restaurants/fishman.jpg" alt="">
                                         </div>
@@ -406,7 +410,7 @@
                                                 </p>
                                             </div>
                                         </div>
-                                    </div>
+                                    </a>
 
                                 </div>
                             </div>
@@ -454,6 +458,101 @@
             </div>
         </footer>
 
+    </div>
+    <div class="trash-window" id="trash-window">
+        <div class="trash-window-overlay"></div>
+        <div class="trash-window-modal-overlay">
+             <div class="trash-window-modal" id="trash-window-modal">
+                 <div class="trash-modal-title">
+                     <p>Оформление заказа</p>
+                 </div>
+                 <div class="trash-modal-form">
+                     <div class="trash-modal-form-inner trash-modal-form-left">
+                        <div class="trash-modal-form-left-inners">
+                            <div class="trash-modal-form-left-inner">
+                                <label class="modal-input-label" for="modal-input-name">Имя:</label>
+                                <input type="text" name="name" class="modal-input" id="modal-input-name">
+                            </div>
+                            <div class="trash-modal-form-left-inner">
+                                <label class="modal-input-label" for="modal-input-tel">Телефон:</label>
+                                <input type="text" name="name" class="modal-input" id="modal-input-tel">
+                            </div>
+                            <div class="trash-modal-form-left-inner">
+                                <label class="modal-input-label" for="modal-input-email">Email:</label>
+                                <input type="text" name="name" class="modal-input" id="modal-input-email">
+                            </div>
+                            <div class="adress-wrap">
+                                <div class="trash-modal-form-left-inner">
+                                    <label class="modal-input-label" for="modal-input-email">Адрес:</label>
+                                    <input type="text" name="name" class="modal-input" id="modal-input-email">
+                                </div>
+                                <div class="trash-modal-form-left-inner">
+                                    <input type="text" name="name" class="modal-input" id="modal-input-email">
+                                </div>
+                                <div class="trash-modal-form-left-inner">
+                                    <input type="text" name="name" class="modal-input" id="modal-input-email">
+                                </div>
+                            </div>
+                            <div class="payment-type-container">
+                                <div class="trash-modal-form-left-inner">
+                                    <label class="modal-input-label" for="modal-input-email">Тип оплаты:</label>
+                                    <input type="text" name="name" class="modal-input" id="modal-input-email">
+                                </div>
+                                <div class="trash-modal-form-left-inner">
+                                    <label class="modal-input-label" for="modal-input-email">Сдача с:</label>
+                                    <input type="text" name="name" class="modal-input" id="modal-input-email">
+                                    <span class="currency">грн</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="trash-modal-form-left-button">
+                            <button type="button" class="modal-button">Оформить заказ</button>
+                        </div>
+                     </div>
+                    <div class="trash-modal-form-inner trash-modal-form-right">
+                        <div class="title-container">
+                            <div class="title">Ваш заказ</div>
+                            <button class="edit-btn">Редактировать</button>
+                        </div>
+                        <div class="price-list-container">
+                            <ul>
+                                <li class="price-item">
+                                    <div class="item-name">Лапша “Удон с курицей” 350г</div>
+                                    <div class="item-cost">127. 00 грн</div>
+                                </li>
+                                <li class="price-item">
+                                    <div class="item-name">Лапша “Удон с курицей” 350г</div>
+                                    <div class="item-cost">127. 00 грн</div>
+                                </li>
+                                <li class="price-item">
+                                    <div class="item-name">Лапша “Удон с курицей” 350г</div>
+                                    <div class="item-cost">127. 00 грн</div>
+                                </li>
+                                <li class="price-item">
+                                    <div class="item-name">Лапша “Удон с курицей” 350г</div>
+                                    <div class="item-cost">127. 00 грн</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="order-info-container">
+                            <div class="order-price">
+                                <span class="title">Сумма заказа:</span>
+                                <span class="price">256.00 грн</span>
+                            </div>
+                            <div class="delivery">
+                                <span class="title">Сумма заказа:</span>
+                                <span class="price">00.00 грн</span>
+                            </div>
+                            <div class="total-payment-container">
+                                <span class="title">Итого к оплате:</span>
+                                <span class="price">256.00 грн</span>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+             </div>
+             <button type="button" class="close-trash" id="close-trash">Close</button>
+        </div>
     </div>
     <!-- jQuery -->
     <script src="js/jquery.min.js"></script>

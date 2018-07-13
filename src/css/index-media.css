@@ -53,6 +53,9 @@
   .g-container .g-content .content-view .inner .rest-list-wrap .menu-item-container .content-wrap .menu-item {
     width: 100%;
   }
+  .g-container .g-content .content-view .inner .error-wrap {
+    width: 41%;
+  }
 }
 @media screen and (max-width: 1600px) {
   .g-header .header-wrap .logo-wrap {
@@ -83,6 +86,9 @@
   }
   .g-container .g-content .content-view .inner .menu-wrap .menu-item-container .content-wrap .menu-item {
     margin: 0 2% 6.2%;
+  }
+  .g-container .g-content .content-view .inner .error-wrap {
+    width: 46%;
   }
   .title-h1 {
     font-size: 55px;
@@ -318,6 +324,9 @@
   .g-container .g-content .content-view .inner .rest-list-wrap .menu-item-container .search-wrap .search-field .search {
     width: 55%;
   }
+  .g-container .g-content .content-view .inner .error-wrap {
+    width: 57%;
+  }
   .inner.width-2 {
     max-width: 100%;
   }
@@ -439,6 +448,9 @@
   }
   .g-container .g-content .content-view .inner .rest-list-wrap .menu-item-container .content-wrap .menu-item .info-wrap {
     width: 100%;
+  }
+  .g-container .g-content .content-view .inner .error-wrap {
+    width: 62%;
   }
   .g-footer .footer-content {
     padding: 18px 20px;
@@ -621,6 +633,9 @@
     width: 45%;
     margin: 0 1% 6.2%;
   }
+  .g-container .g-content .content-view .inner .error-wrap {
+    width: 74%;
+  }
   .g-container .g-footer:before {
     left: 10%;
     bottom: 156px;
@@ -800,6 +815,9 @@
   .g-container .g-content .content-view .inner .rest-list-wrap .menu-item-container {
     width: 100%;
   }
+  .g-container .g-content .content-view .inner .error-wrap {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 700px) {
   .g-container .g-content .content-view .inner {
@@ -961,6 +979,15 @@
   .g-container .g-content .content-view .inner .rest-list-wrap .menu-item-container .content-wrap .menu-item .info-wrap {
     width: 100%;
     padding: 29px 20px 28px 20px;
+  }
+  .g-container .g-content .content-view .inner .error-wrap .error-img img {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+  }
+  .g-container .g-content .content-view .inner .error-wrap .description {
+    font-size: 15px;
+    line-height: 24px;
   }
   .g-container .g-content .content-view .map-wrap .map-title-container .map-title {
     font-size: 25px;
