@@ -202,6 +202,17 @@
                             }
                         }
                     }
+
+                    .servise-steps {
+                        li {
+                            &:nth-child(2) {
+                                &:before {
+                                    top: -23%;
+                                    right: -175%;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -347,7 +358,27 @@
                         }
                     }
 
-                    
+                    .servise-steps {
+                        li {
+                            &:first-child {
+                                &:before {
+                                    top: -7%;
+                                    width: 239px;
+                                }
+
+                                .step-num {
+                                    right: -23%;
+                                }
+                            }
+                            &:nth-child(2) {
+                                &:before {
+                                    top: -28%;
+                                    right: -174%;
+                                    width: 300px;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -579,6 +610,33 @@
                     .error-wrap {
                         width: 57%;
                     }
+
+                    .servise-steps {
+                        li {
+                            &:first-child {
+                                &:before {
+                                    top: -10%;
+                                    right: -213%;
+                                }
+
+                                .step-num {
+                                    right: -52%;
+                                }
+                            }
+                            &:nth-child(2) {
+                                &:before {
+                                    top: -18%;
+                                    width: 260px;
+                                }
+                            }
+                            &:last-child {
+                                .step-num {
+                                    top: -20px;
+                                    right: 88%;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -664,8 +722,11 @@
 
                     .stocks-wrap {
                         .item-wrap {
+                            justify-content: center;
+                            flex-direction: column;
+                            align-items: center;
                             .item {
-                                width: 440px;
+                                width: 70%;
                                 height: 240px;
                                 margin: 0px 10px 45px;
 
@@ -712,10 +773,14 @@
                             position: relative;
                             margin: 0 0 90px;  
 
+                            &:before {
+                                content: none;
+                            }
+
                             &:first-child {
                                 .step-num {
-                                    top: -42px;
-                                    right: -2%;
+                                    top: -45px;
+                                    right: 16%;
                                 }
                             }
                             &:last-child {
@@ -800,7 +865,7 @@
 
     .g-footer {
         .footer-content {
-            padding: 18px 20px;
+            padding: 18px 10px;
         }
     }
 
@@ -870,7 +935,6 @@
                     .stocks-wrap {
                         .item-wrap {
                             .item {
-                                width: 420px;
                                 box-shadow: 0 0 25px rgba(101, 37, 51, 0.6);
 
                                 .image-wrap {
@@ -1007,11 +1071,9 @@
                     .stocks-wrap {
                         .item-wrap {
                             .item {
-                                width: 370px;
-                                height: 210px;
-                                
+                                width: 80%;
                                 .image-wrap {
-                                    width: 170px;
+                                    width: 230px;
                                 }
 
                                 .content-wrap {
@@ -1108,6 +1170,17 @@
                     .error-wrap {
                         width: 74%;
                     }
+
+                    .servise-steps {
+                        li {
+                            &:first-child {
+                                .step-num {
+                                    top: -45px;
+                                    right: 10%;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -1120,7 +1193,7 @@
 
             .footer-wrap {
                 .menu-wrap ul li {
-                    width: 33.3333333333%; 
+                    width: 50%;
                     margin-right: 0;
                     padding-bottom: 16px;
                 }
@@ -1373,6 +1446,24 @@
                     .error-wrap {
                         width: 100%;
                     }
+
+                    .servise-steps {
+                        flex-direction: column;
+
+                        li {
+                            &:first-child {
+                                .step-num {
+                                    right: 0%;
+                                }
+                            }
+                            &:nth-child(2) {
+                                margin-top: 0;
+                            }
+                            &:last-child {
+                                margin-top: 0;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -1571,7 +1662,6 @@
                         flex-direction: column;
                         box-sizing: border-box;
 
-
                         li {
                             width: 86%;
                             margin: 0 0 90px;
@@ -1583,8 +1673,7 @@
                                 margin-top: 0;
 
                                 .step-num {
-                                   top: -42px;
-                                    right: 11%;
+                                    right: 16%;
                                 }
                             }
                             &:last-child {
@@ -1760,7 +1849,7 @@
                     .servise-steps {
                       
                         li {
-                            width: 86%;
+                            width: 90%;
                             margin: 0 0 90px;
                             
                             &:before {
@@ -1933,10 +2022,11 @@
 
                                 .image-wrap {
                                     width: 190px;
+                                    display: none;
                                 }
 
                                 .content-wrap {
-                                    width: calc(~"100% - 190px");
+                                    width: 100%;
 
                                     .title {
                                         margin-bottom: 15px;
@@ -1957,14 +2047,13 @@
                             
                             &:first-child {
                                 .step-num {
-                                   top: -42px;
-                                    right: -2%;
+                                    right: 0%;
                                 }
                             }
                             &:last-child {
                                 .step-num {
-                                    top: -26px;
-                                    right: 61%;
+                                    top: -31px;
+                                    right: 71%;
                                 }
                             }
                             &:nth-child(2) {

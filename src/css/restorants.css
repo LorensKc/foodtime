@@ -139,6 +139,7 @@
   border-radius: 4px;
   background-color: #fff;
   box-shadow: 0 0 50px rgba(101, 37, 51, 0.6);
+  overflow: hidden;
 }
 .g-container .g-content .content-view .inner .stocks-wrap .item-wrap .item.animate-element {
   opacity: 0;
@@ -329,6 +330,17 @@
   width: 18%;
   margin: 0px 18px 0 0;
 }
+.g-container .g-content .content-view .inner .menu-wrap .menu-filter-list.animate-element {
+  opacity: 0;
+  transform: translateY(10%) scale(1, 0.7);
+  transition: transform 1.3s cubic-bezier(0.4, 0, 0, 1);
+  will-change: transform, opacity;
+  transition-property: opacity, transform;
+}
+.g-container .g-content .content-view .inner .menu-wrap .menu-filter-list.animate-element.active {
+  opacity: 1;
+  transform: none;
+}
 .g-container .g-content .content-view .inner .menu-wrap .menu-filter-list .filter-title {
   margin: 0 0 13px;
   font-size: 16px;
@@ -387,6 +399,17 @@
   background-color: #ffffff;
   box-sizing: border-box;
   box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.26);
+}
+.g-container .g-content .content-view .inner .menu-wrap .menu-item-container .content-wrap .menu-item.animate-element {
+  opacity: 0;
+  transform: translateY(50%) scale(1, 0.7);
+  transition: transform 1.3s cubic-bezier(0.4, 0, 0, 1);
+  will-change: transform, opacity;
+  transition-property: opacity, transform;
+}
+.g-container .g-content .content-view .inner .menu-wrap .menu-item-container .content-wrap .menu-item.animate-element.active {
+  opacity: 1;
+  transform: none;
 }
 .g-container .g-content .content-view .inner .menu-wrap .menu-item-container .content-wrap .menu-item .image {
   width: 100%;
@@ -508,6 +531,17 @@
   padding: 0 0px 0 13px;
   margin: 0 0 5.8%;
 }
+.g-container .g-content .content-view .inner .about-rest-wrap .about-info-container.animate-element {
+  opacity: 0;
+  transform: translateY(50%) scale(1, 0.7);
+  transition: transform 1.3s cubic-bezier(0.4, 0, 0, 1);
+  will-change: transform, opacity;
+  transition-property: opacity, transform;
+}
+.g-container .g-content .content-view .inner .about-rest-wrap .about-info-container.animate-element.active {
+  opacity: 1;
+  transform: none;
+}
 .g-container .g-content .content-view .inner .about-rest-wrap .about-info-container .rest-image {
   margin: 0 59px 0 0px;
 }
@@ -526,6 +560,19 @@
   align-items: center;
   padding: 0 11px;
   margin: 0 0 4.2%;
+}
+.g-container .g-content .content-view .inner .about-rest-wrap .about-hours.animate-element,
+.g-container .g-content .content-view .inner .about-rest-wrap .about-place.animate-element {
+  opacity: 0;
+  transform: translateY(50%) scale(1, 0.7);
+  transition: transform 1.3s cubic-bezier(0.4, 0, 0, 1);
+  will-change: transform, opacity;
+  transition-property: opacity, transform;
+}
+.g-container .g-content .content-view .inner .about-rest-wrap .about-hours.animate-element.active,
+.g-container .g-content .content-view .inner .about-rest-wrap .about-place.animate-element.active {
+  opacity: 1;
+  transform: none;
 }
 .g-container .g-content .content-view .inner .about-rest-wrap .about-hours h3,
 .g-container .g-content .content-view .inner .about-rest-wrap .about-place h3 {
