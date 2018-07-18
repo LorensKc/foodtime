@@ -343,6 +343,7 @@
                     }
 
                     .rest-list-wrap {
+                        width: 90%;
                         .menu-item-container {
                             .content-wrap {
                                 .menu-item {
@@ -432,6 +433,8 @@
         .g-content {
             .content-view {
                 .inner {
+                    padding-right: 70px;
+                    padding-left: 70px;
                     &.width-2 {
                         max-width: 100%;
                     }
@@ -467,7 +470,7 @@
                     .stocks-wrap {
                         .item-wrap {
                             .item {
-                                width: 470px;
+                                width: 500px;
                                 margin: 0 5px 50px;
 
                                 .content-wrap {
@@ -655,6 +658,42 @@
     .trash-modal-form {
         width: 90%;
         margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    .g-container {
+        .g-content {
+            .content-view {
+                .inner {
+                    padding-right: 40px;
+                    padding-left: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .g-container {
+        .g-content {
+            .content-view {
+                .inner {
+
+                    .stocks-wrap {
+                        .item-wrap {
+                            .item {
+                                width: 460px;
+
+                                .image-wrap {
+                                    width: 230px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 

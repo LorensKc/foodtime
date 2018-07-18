@@ -828,6 +828,7 @@ a:hover {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+        position: relative;
     }
 
     .header-button-search {
@@ -874,6 +875,45 @@ a:hover {
         .icon-wrap {
             width: 22px;
             fill: #fff;
+        }
+    }
+
+    #dropdown-menu {
+        background-color: rgba(101, 37, 51, 0.8);
+        overflow: hidden;
+        border-radius: 0px 0px 6px 6px;
+        list-style: none;
+        padding: 0;
+        width: 200px;
+        // display: none;
+        opacity: 0;
+        transition: all ease .5s;
+        position: absolute;
+        top: 70px;
+        transform: translateY(-57%);
+        z-index: -1;
+        
+        &.open {
+            // display: inline-block;
+            opacity: 1;
+            transform: none;
+            z-index: 1;
+        }
+        
+        li {
+            display: block;
+            padding: 10px;
+            cursor: pointer;
+
+            span {
+                color: #FFF;
+            }
+
+            &:hover {
+                span {
+                    color: rgba(0, 0, 0, .7);
+                }
+            }
         }
     }
 
@@ -1392,9 +1432,11 @@ a:hover {
     }
 
     .image-wrap {
+        display: inline-block;
         width: 110px;
         margin: 0 auto 20px;
         background-color: #fff;
+        cursor: pointer;
 
         img {
             width: 100%;

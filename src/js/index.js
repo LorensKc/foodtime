@@ -31,6 +31,20 @@ jQuery(document).ready(function($) {
 			}
 		}
 	});
+
+	$(".header-button-phone").click(function(e) {
+		e.stopPropagation();
+		$("#dropdown-menu").toggleClass("open");
+		return $("#dropdown-menu").removeClass("closed");
+	});
+
+	$("#dropdown-menu li span").click(function(e) {
+		return $("#dropdown-menu").removeClass("open");
+	});
+
+	// $("html").click(function () {
+	// 	return $("#dropdown-menu").removeClass("open");
+	// });
 });
 
 /*	Search
@@ -167,24 +181,30 @@ window.onload = function() {
 
 		//rangerSlider
 
+		const selects = $("select");
+		const rangeInputs = $('input[type="range"]');
 		const priceValue = document.getElementsByClassName("price-value")[0];
 
 		$(document).on("input", 'input[type="range"]', function(e) {
 			priceValue.innerHTML = e.currentTarget.value;
 		});
 
-		$('input[type="range"]').rangeslider({
-			polyfill: false,
-			horizontalClass: "rangeslider--horizontal",
-			handleClass: "rangeslider__handle"
-		});
+		if (rangeInputs.length) {
+			rangeInputs.rangeslider({
+				polyfill: false,
+				horizontalClass: "rangeslider--horizontal",
+				handleClass: "rangeslider__handle"
+			});
+		}
 
 		const body = document.getElementsByTagName("body")[0];
 		const headerShopingCard = document.getElementById("header-shopping-cart");
 		const trashModal = document.getElementById("trash-window");
 		const closeTrash = document.getElementById("close-trash");
 
-		headerShopingCard.addEventListener("click", () => {
+		headerShopingCard.addEventListener(
+			"click",
+			() => {
 				if (!body.classList.contains("lock")) {
 					body.className += " lock";
 				}
@@ -192,30 +212,28 @@ window.onload = function() {
 				if (!trashModal.classList.contains("open")) {
 					trashModal.className += " open";
 				}
-		}, false);
+			},
+			false
+		);
 
-		closeTrash.addEventListener('click', () => {
-			if (body.classList.contains("lock")) {
-				body.classList.remove("lock");
-			}
+		closeTrash.addEventListener(
+			"click",
+			() => {
+				if (body.classList.contains("lock")) {
+					body.classList.remove("lock");
+				}
 
-			if (trashModal.classList.contains("open")) {
-				trashModal.classList.remove("open");
-			}
-		}, false);
+				if (trashModal.classList.contains("open")) {
+					trashModal.classList.remove("open");
+				}
+			},
+			false
+		);
 
-		$('select').niceSelect();
+		if (selects.length) {
+			selects.niceSelect();
+		}
 	});
 };
-
-/*	Animations on scroll
- =============================================*/
-
-// wow = new WOW(
-//     {
-//         animateClass: 'animated',
-//         offset:       100
-//     }
-// );
 
 // wow.init();

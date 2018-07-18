@@ -658,6 +658,7 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 .g-header .header-button-search {
   display: none;
@@ -699,6 +700,36 @@ a:hover {
 .g-header .header-button-phone .icon-wrap {
   width: 22px;
   fill: #fff;
+}
+.g-header #dropdown-menu {
+  background-color: rgba(101, 37, 51, 0.8);
+  overflow: hidden;
+  border-radius: 0px 0px 6px 6px;
+  list-style: none;
+  padding: 0;
+  width: 200px;
+  opacity: 0;
+  transition: all ease .5s;
+  position: absolute;
+  top: 70px;
+  transform: translateY(-57%);
+  z-index: -1;
+}
+.g-header #dropdown-menu.open {
+  opacity: 1;
+  transform: none;
+  z-index: 1;
+}
+.g-header #dropdown-menu li {
+  display: block;
+  padding: 10px;
+  cursor: pointer;
+}
+.g-header #dropdown-menu li span {
+  color: #FFF;
+}
+.g-header #dropdown-menu li:hover span {
+  color: rgba(0, 0, 0, 0.7);
 }
 .g-header .header-shopping-cart {
   font-size: 13px;
@@ -1126,9 +1157,11 @@ a:hover {
   transform: none;
 }
 .restaurants-wrap .image-wrap {
+  display: inline-block;
   width: 110px;
   margin: 0 auto 20px;
   background-color: #fff;
+  cursor: pointer;
 }
 .restaurants-wrap .image-wrap img {
   width: 100%;

@@ -161,6 +161,9 @@
   position: relative;
 }
 .g-container .g-content .content-view .inner .stocks-wrap .item-wrap .item .content-wrap {
+  display: inline-block;
+  box-sizing: border-box;
+  height: 100%;
   width: calc(100% - 200px);
   position: relative;
   padding: 24px;

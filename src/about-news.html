@@ -41,9 +41,6 @@
     <link href="css/index.css" rel="stylesheet">
     <link href="css/news.css" rel="stylesheet">
     <link href="css/index-media.css" rel="stylesheet">
-    <script src="js/jquery.min.js"></script>
-    <!-- Owl js -->
-    <script src="js/owl.carousel.min.js"></script>
 </head>
 
 <body>
@@ -84,7 +81,24 @@
                                 </svg>
                             </div>
                         </a>
-                        <div class="header-shopping-cart">
+                        <ul id="dropdown-menu" class="closed">
+                            <li>
+                                <span>+7 915 499-99-99</span>
+                            </li>
+                            <li>
+                                <span>+7 915 499-99-99</span>
+                            </li>
+                            <li>
+                                <span>+7 915 499-99-99</span>
+                            </li>
+                            <li>
+                                <span>+7 915 499-99-99</span>
+                            </li>
+                            <li>
+                                <span>+7 915 499-99-99</span>
+                            </li>
+                        </ul>
+                        <button type="button" class="header-shopping-cart" id="header-shopping-cart">
                             <div class="icon-wrap">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 57.07 50.55">
                                     <path d="M21.32 41.06a4.75 4.75 0 1 1-4.74 4.74 4.75 4.75 0 0 1 4.74-4.74zM42 41.06a4.75 4.75 0 1 1-4.75 4.74A4.74 4.74 0 0 1 42 41.06zM54.11 15.05H24.83a2.32 2.32 0 0 0-1.73 2.3 2.61 2.61 0 0 0 1.73 2.46h26.25l-1.47 5H23.8a2.14 2.14 0 0 0-1.61 2.13 2.44 2.44 0 0 0 1.61 2.3h24.5l-1.38 4.66H20.27l-1.76-14.09-.58-4.76s-.51-4.38-.8-6.2S12.28 4.75 2.5.14c-2.3-1-4.23 3.25 0 5.45l7.72 3.6s1.79 1.05 1.94 2.44 3.29 24.62 3.29 24.62.13 3.23 3.06 3.23H48a3.13 3.13 0 0 0 2.95-2.57l5.83-17.33s1.69-4.53-2.67-4.53z"
@@ -92,7 +106,7 @@
                                 </svg>
                             </div>
                             <div class="button-text">корзина пуста</div>
-                        </div>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -199,27 +213,27 @@
                     <div class="footer-menu">
                         <nav class="menu-wrap">
                             <ul>
-                                <li>
-                                    <a href="#">Все рестораны</a>
-                                </li>
-                                <li>
-                                    <a href="#">Все магазины</a>
-                                </li>
-                                <li>
-                                    <a href="#">О сервисе</a>
-                                </li>
-                                <li>
-                                    <a href="#">Сотрудничество</a>
-                                </li>
-                                <li>
-                                    <a href="#">Правила сервиса</a>
-                                </li>
-                                <li>
-                                    <a href="#">Новости и статьи</a>
-                                </li>
-                                <li>
-                                    <a href="#">Служба поддержки</a>
-                                </li>
+                            <li>
+                                <a href="rest-list.html">Все рестораны</a>
+                            </li>
+                            <li>
+                                <a href="rest-list.html">Все магазины</a>
+                            </li>
+                            <li>
+                                <a href="about.html">О сервисе</a>
+                            </li>
+                            <li>
+                                <a href="#">Сотрудничество</a>
+                            </li>
+                            <li>
+                                <a href="#">Правила сервиса</a>
+                            </li>
+                            <li>
+                                <a href="news.html">Новости и статьи</a>
+                            </li>
+                            <li>
+                                <a href="support-form.html">Служба поддержки</a>
+                            </li>
                             </ul>
                         </nav>
                     </div>
@@ -231,11 +245,127 @@
         </footer>
 
     </div>
-    <!-- jQuery -->
+
+    <div class="trash-window" id="trash-window">
+        <div class="trash-window-overlay"></div>
+        <div class="trash-window-modal-overlay">
+            <div class="trash-window-modal" id="trash-window-modal">
+                <div class="trash-modal-title">
+                    <p>Оформление заказа</p>
+                </div>
+                <div class="trash-modal-form">
+                    <div class="trash-modal-form-inner trash-modal-form-left">
+                        <div class="trash-modal-form-left-inners">
+                            <div class="general-info-wrap">
+                                <div class="trash-modal-form-left-inner">
+                                    <label class="modal-input-label" for="modal-input-name">Имя:</label>
+                                    <input type="text" name="name" class="modal-input normal-width" id="modal-input-name">
+                                </div>
+                                <div class="trash-modal-form-left-inner">
+                                    <label class="modal-input-label" for="modal-input-tel">Телефон:</label>
+                                    <input type="text" name="name" class="modal-input normal-width" id="modal-input-tel">
+                                </div>
+                                <div class="trash-modal-form-left-inner">
+                                    <label class="modal-input-label" for="modal-input-email">Email:</label>
+                                    <input type="text" name="name" class="modal-input normal-width" id="modal-input-email">
+                                </div>
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" name="" id="no-email">
+                                    <label for="no-email">Не хочу оставлять свой Email</label>
+                                </div>
+                            </div>
+                            <div class="adress-wrap">
+                                <div class="trash-modal-form-left-inner">
+                                    <label class="modal-input-label" for="modal-input-email">Адрес:</label>
+                                    <input type="text" name="name" class="modal-input normal-width" id="modal-input-adress">
+                                </div>
+                                <div class="trash-modal-form-left-inner auto-width">
+                                    <input type="text" name="name" class="modal-input min-width" id="modal-input-house">
+                                </div>
+                                <div class="trash-modal-form-left-inner auto-width">
+                                    <input type="text" name="name" class="modal-input min-width" id="modal-input-appart">
+                                </div>
+                            </div>
+                            <div class="payment-type-container">
+                                <div class="trash-modal-form-left-inner">
+                                    <label class="modal-input-label" for="payment-type">Тип оплаты:</label>
+                                    <select name="" id="payment-type" class="normal-width">
+                                        <option data-display="Select">Наличными</option>
+                                        <option value="">Банковской картой</option>
+                                        <option value="">PayPal</option>
+                                        <option value="">Приват24</option>
+                                    </select>
+    
+                                </div>
+                                <div class="trash-modal-form-left-inner auto-width">
+                                    <label class="modal-input-label" for="modal-input-email">Сдача с:</label>
+                                    <input type="text" name="name" class="modal-input min-width">
+                                    <span class="currency">грн</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="trash-modal-form-left-button">
+                            <button type="button" class="modal-button">Оформить заказ</button>
+                        </div>
+                    </div>
+                    <div class="trash-modal-form-inner trash-modal-form-right">
+                        <div class="form-right-title">
+                            <div class="title">Ваш заказ</div>
+                            <button class="edit-btn">Редактировать</button>
+                        </div>
+                        <div class="price-list-container">
+                            <ul>
+                                <li class="price-item">
+                                    <div class="item-name">Лапша “Удон с курицей” 350г</div>
+                                    <div class="item-cost">127. 00
+                                        <span>грн</span>
+                                    </div>
+                                </li>
+                                <li class="price-item">
+                                    <div class="item-name">Лапша “Удон с курицей” 350г</div>
+                                    <div class="item-cost">127. 00
+                                        <span>грн</span>
+                                    </div>
+                                </li>
+                                <li class="price-item">
+                                    <div class="item-name">Лапша “Удон с курицей” 350г</div>
+                                    <div class="item-cost">127. 00
+                                        <span>грн</span>
+                                    </div>
+                                </li>
+                                <li class="price-item">
+                                    <div class="item-name">Лапша “Удон с курицей” 350г</div>
+                                    <div class="item-cost">127. 00
+                                        <span>грн</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="order-info-container">
+                            <div class="order-price">
+                                <span class="title">Сумма заказа:</span>
+                                <span class="price">256.00 грн</span>
+                            </div>
+                            <div class="delivery">
+                                <span class="title">Доставка:</span>
+                                <span class="price">00.00 грн</span>
+                            </div>
+                            <div class="total-payment-container">
+                                <span class="title">Итого к оплате:</span>
+                                <span class="price">256.00 грн</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="close-trash" id="close-trash">Close</button>
+        </div>
+    </div>
     <script src="js/jquery.min.js"></script>
-    <!-- Owl js -->
+    <script src="js/rangeslider.js" defer></script>
+    <script src="js/jquery.nice-select.js"></script>
     <script src="js/owl.carousel.min.js"></script>
-    <!-- Script -->
+    <script src="js/vendor/wow.min.js"></script>
     <script src="js/index.js"></script>
 </body>
 
