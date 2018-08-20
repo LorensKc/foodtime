@@ -29,25 +29,6 @@
                 .current-pos {
                     display: flex;
                     justify-content: center;
-
-                    span {
-                        font-size: 16px;
-                        font-weight: 100;
-                        letter-spacing: 0.32px;
-
-                       &.animate-element {
-                            opacity: 0;
-                            transform: translateY(50%) scale(1, .7);
-                            transition: transform 1.3s cubic-bezier(.4,0,0,1);
-                            will-change: transform, opacity;
-                            transition-property: opacity, transform;
-                            
-                            &.active {
-                                opacity: 1;
-                                transform: none;
-                            }
-                        }
-                    }
                 }
                 
                 .rest-title {

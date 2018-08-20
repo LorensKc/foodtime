@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900');
 @import 'rangeslider.css';
+@import 'nice-select.css';
 .clearfix:after,
 .clear:after {
   font-size: 0;
@@ -560,7 +561,7 @@ a:hover {
 .inner .current-pos span {
   color: #652533;
   font-size: 16px;
-  font-weight: 100;
+  font-weight: 400;
 }
 .inner .current-pos span.animate-element {
   opacity: 0;
@@ -1488,6 +1489,19 @@ body.lock {
   justify-content: flex-end;
   margin: 0 0 20px;
 }
+.trash-modal-form-left-inner .nice-select {
+  display: flex;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 2px;
+  border: 1px solid #999999;
+  margin: 0 0 0 5px;
+  box-sizing: border-box;
+  width: 230px;
+}
+.trash-modal-form-left-inner .nice-select .current {
+  margin: 0;
+}
 .modal-input-label {
   font-size: 15px;
   font-weight: 700;
@@ -1504,6 +1518,9 @@ body.lock {
 }
 .modal-input.min-width {
   width: 105px;
+}
+.modal-input::-webkit-input-placeholder {
+  color: lightgrey;
 }
 .checkbox-wrap {
   display: flex;

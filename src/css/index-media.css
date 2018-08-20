@@ -26,9 +26,12 @@
   .g-container .g-content .content-view .inner.width-1 {
     max-width: 100%;
   }
+  .g-container .g-content .content-view .inner .stocks-wrap .item-wrap {
+    justify-content: space-between;
+  }
   .g-container .g-content .content-view .inner .stocks-wrap .item-wrap .item {
-    width: 520px;
-    margin: 0px 15px 50px;
+    width: 470px;
+    margin: 0px 10px 50px;
   }
   .g-container .g-content .content-view .inner .about-rest-wrap {
     width: 82%;
@@ -64,11 +67,8 @@
   .g-header .header-wrap .header-search {
     margin-right: 4%;
   }
-  .g-container .g-content .content-view .inner .stocks-wrap .item-wrap {
-    justify-content: space-between;
-  }
   .g-container .g-content .content-view .inner .stocks-wrap .item-wrap .item {
-    width: 660px;
+    width: 600px;
     margin: 0px 25px 50px;
   }
   .g-container .g-content .content-view .inner .advantages .title {
@@ -350,20 +350,26 @@
   .g-container .g-content .content-view .inner .error-wrap {
     width: 57%;
   }
+  .g-container .g-content .content-view .inner .servise-steps {
+    width: 90%;
+  }
+  .g-container .g-content .content-view .inner .servise-steps li {
+    width: 21%;
+  }
   .g-container .g-content .content-view .inner .servise-steps li:first-child:before {
     top: -10%;
-    right: -213%;
+    right: -123%;
   }
   .g-container .g-content .content-view .inner .servise-steps li:first-child .step-num {
-    right: -52%;
+    right: -7%;
   }
   .g-container .g-content .content-view .inner .servise-steps li:nth-child(2):before {
-    top: -18%;
-    width: 260px;
+    top: -38%;
+    right: -96%;
   }
   .g-container .g-content .content-view .inner .servise-steps li:last-child .step-num {
-    top: -20px;
-    right: 88%;
+    top: -26px;
+    right: 70%;
   }
   .inner.width-2 {
     max-width: 100%;
@@ -1033,7 +1039,7 @@
     margin-top: 0;
   }
   .g-container .g-content .content-view .inner .servise-steps li:first-child .step-num {
-    right: 16%;
+    right: 12%;
   }
   .g-container .g-content .content-view .inner .servise-steps li:last-child {
     margin-top: 0;

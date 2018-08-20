@@ -164,6 +164,121 @@
         </footer>
 
     </div>
+    <div class="trash-window" id="trash-window">
+        <div class="trash-window-overlay"></div>
+        <div class="trash-window-modal-overlay">
+            <div class="trash-window-modal" id="trash-window-modal">
+                <div class="trash-modal-title">
+                    <p>Оформление заказа</p>
+                </div>
+                <div class="trash-modal-form">
+                    <div class="trash-modal-form-inner trash-modal-form-left">
+                        <div class="trash-modal-form-left-inners">
+                            <div class="general-info-wrap">
+                                <div class="trash-modal-form-left-inner">
+                                    <label class="modal-input-label" for="modal-input-name">Имя:</label>
+                                    <input type="text" name="name" class="modal-input normal-width" id="modal-input-name">
+                                </div>
+                                <div class="trash-modal-form-left-inner">
+                                    <label class="modal-input-label" for="modal-input-tel">Телефон:</label>
+                                    <input type="text" name="name" class="modal-input normal-width" id="modal-input-tel">
+                                </div>
+                                <div class="trash-modal-form-left-inner">
+                                    <label class="modal-input-label" for="modal-input-email">Email:</label>
+                                    <input type="text" name="name" class="modal-input normal-width" id="modal-input-email">
+                                </div>
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" name="" id="no-email">
+                                    <label for="no-email">Не хочу оставлять свой Email</label>
+                                </div>
+                            </div>
+                            <div class="adress-wrap">
+                                <div class="trash-modal-form-left-inner">
+                                    <label class="modal-input-label" for="modal-input-email">Адрес:</label>
+                                    <input type="text" name="name" class="modal-input normal-width" id="modal-input-adress" placeholder="Улица">
+                                </div>
+                                <div class="trash-modal-form-left-inner auto-width">
+                                    <input type="text" name="name" class="modal-input min-width" id="modal-input-house" placeholder="Дом">
+                                </div>
+                                <div class="trash-modal-form-left-inner auto-width">
+                                    <input type="text" name="name" class="modal-input min-width" id="modal-input-appart" placeholder="Кв">
+                                </div>
+                            </div>
+                            <div class="payment-type-container">
+                                <div class="trash-modal-form-left-inner">
+                                    <label class="modal-input-label" for="payment-type">Тип оплаты:</label>
+                                    <select name="" id="payment-type" class="normal-width">
+                                        <option data-display="Наличными">Наличными</option>
+                                        <option value="">Банковской картой</option>
+                                        <option value="">PayPal</option>
+                                        <option value="">Приват24</option>
+                                    </select>
+    
+                                </div>
+                                <div class="trash-modal-form-left-inner auto-width">
+                                    <label class="modal-input-label" for="modal-input-email">Сдача с:</label>
+                                    <input type="text" name="name" class="modal-input min-width">
+                                    <span class="currency">грн</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="trash-modal-form-left-button">
+                            <button type="button" class="modal-button">Оформить заказ</button>
+                        </div>
+                    </div>
+                    <div class="trash-modal-form-inner trash-modal-form-right">
+                        <div class="form-right-title">
+                            <div class="title">Ваш заказ</div>
+                            <button class="edit-btn">Редактировать</button>
+                        </div>
+                        <div class="price-list-container">
+                            <ul>
+                                <li class="price-item">
+                                    <div class="item-name">Лапша “Удон с курицей” 350г</div>
+                                    <div class="item-cost">127. 00
+                                        <span>грн</span>
+                                    </div>
+                                </li>
+                                <li class="price-item">
+                                    <div class="item-name">Лапша “Удон с курицей” 350г</div>
+                                    <div class="item-cost">127. 00
+                                        <span>грн</span>
+                                    </div>
+                                </li>
+                                <li class="price-item">
+                                    <div class="item-name">Лапша “Удон с курицей” 350г</div>
+                                    <div class="item-cost">127. 00
+                                        <span>грн</span>
+                                    </div>
+                                </li>
+                                <li class="price-item">
+                                    <div class="item-name">Лапша “Удон с курицей” 350г</div>
+                                    <div class="item-cost">127. 00
+                                        <span>грн</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="order-info-container">
+                            <div class="order-price">
+                                <span class="title">Сумма заказа:</span>
+                                <span class="price">256.00 грн</span>
+                            </div>
+                            <div class="delivery">
+                                <span class="title">Доставка:</span>
+                                <span class="price">00.00 грн</span>
+                            </div>
+                            <div class="total-payment-container">
+                                <span class="title">Итого к оплате:</span>
+                                <span class="price">256.00 грн</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="close-trash" id="close-trash">Close</button>
+        </div>
+    </div>
     <!-- jQuery -->
     <script src="js/jquery.min.js"></script>
     <!-- Owl js -->

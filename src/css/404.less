@@ -34,9 +34,19 @@
                         letter-spacing: 0.32px;
                         line-height: 27px;
                         text-align: center;
+
                         a { 
+                            position: relative;
                             color: #652533;
-                            text-decoration: underline;
+                            &:before {
+                                content: '';
+                                height: 1px;
+                                width: 100%;
+                                background: #652533;
+                                position: absolute;
+                                left: 0;
+                                bottom: 0;
+                            }
                         }
                     }
                 }

@@ -28,8 +28,17 @@
   text-align: center;
 }
 .g-container .g-content .content-view .inner .error-wrap .description a {
+  position: relative;
   color: #652533;
-  text-decoration: underline;
+}
+.g-container .g-content .content-view .inner .error-wrap .description a:before {
+  content: '';
+  height: 1px;
+  width: 100%;
+  background: #652533;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 .g-container .g-footer {
   position: relative;

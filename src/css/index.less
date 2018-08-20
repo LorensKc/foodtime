@@ -712,7 +712,7 @@ a:hover {
         span {
             color: #652533;
             font-size: 16px;
-            font-weight: 100;
+            font-weight: 400;
 
             &.animate-element {
                 opacity: 0;
@@ -1828,6 +1828,20 @@ body.lock {
     margin: 0 0 20px;
 }
 
+.trash-modal-form-left-inner .nice-select {
+    display: flex;
+    align-items: center;
+    padding: 6px 10px;
+    border-radius: 2px;
+    border: 1px solid #999999;
+    margin: 0 0 0 5px;
+    box-sizing: border-box;
+    width: 230px;
+}
+.trash-modal-form-left-inner .nice-select .current {
+    margin: 0;
+}
+
 .modal-input-label {
     // width: 100px;
     font-size: 15px;
@@ -1847,6 +1861,9 @@ body.lock {
     }
     &.min-width {
         width: 105px;
+    }
+    &::-webkit-input-placeholder {
+      color: lightgrey;  
     }
 }
 
@@ -2027,5 +2044,7 @@ body.lock {
 // @import 'rest-list.css';
 // @import 'support.css';
 // @import 'index-media.css';
-@import 'rangeslider.css';
 // @import 'animate.css';
+@import 'rangeslider.css';
+@import 'nice-select.css';
+
