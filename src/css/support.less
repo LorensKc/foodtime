@@ -52,6 +52,7 @@
                     flex-direction: column;
                     align-items: center;
                     width: 40%;
+                    position: relative;
                     margin: 0 auto;
                     padding: 0 8% 0px 0;
 
@@ -68,6 +69,35 @@
                         }
                     }
 
+                    .message_success {
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        opacity: 0;
+                        z-index: 10;
+                        pointer-events: none;
+                        display: flex;
+                        flex-flow: column nowrap;
+                        align-items: center;
+                        justify-content: center;
+                        background: white;
+                        will-change: opacity;
+                        transition: opacity 0.5s ease-out;
+
+                        &.active {
+                            opacity: 1;
+                            pointer-events: all;
+                        }
+
+                        p {
+                            width: 100%;
+                            text-align: center;
+                            font-size: 30px;
+                        }
+                    }
+
                     .input-container {
                         display: flex;
                         flex-direction: row;
@@ -75,6 +105,10 @@
                         justify-content: flex-end;
                         width: 100%;
                         margin: 0 0px 39px;
+
+                        &.textarea-field {
+                            align-items: flex-start;
+                        }
 
                         input, textarea { 
                             width: 100%;
@@ -89,6 +123,10 @@
                             box-sizing: border-box;
                             -webkit-box-sizing: border-box;
                             -moz-box-sizing: border-box;
+
+                            &.error {
+                                border-color: red !important;
+                            }
                         }
 
                         textarea {
@@ -101,6 +139,7 @@
                             font-weight: 700;
                             line-height: 24px;
                             letter-spacing: 0.45px;
+                            text-align: right;
                         }
                     }
 
@@ -108,8 +147,55 @@
                         margin: 16px 0 0;
                         padding: 0 0px 0 23%;
 
-                        .btn { 
+                        .submit-support {
+                            display: inline-block;
+                            font-size: 15px;
+                            font-weight: bold;
+                            position: relative;
+                            box-sizing: border-box;
                             padding: 13px 53px 13px;
+                            cursor: pointer;
+                            border-radius: 27px;
+                            border: 3px solid #652533;
+                            background-color: #652533;
+                            color: #fff;
+
+                            &:hover {
+                                span {
+                                    -webkit-transform: translateX(-12px);
+                                    transform: translateX(-12px);
+                                }
+
+                                &:after {
+                                    -webkit-transform: none;
+                                    transform: none; 
+                                    opacity: 1;
+                                }
+                            }
+
+                            &:after {
+                                position: absolute;
+                                top: 0;
+                                right: 24px;
+                                bottom: 0;
+                                width: 18px;
+                                height: 18px;
+                                margin: auto 0;
+                                content: '';
+                                transition: .4s cubic-bezier(.455,.03,.515,.955);
+                                -webkit-transform: translateX(100%);
+                                transform: translateX(100%);
+                                opacity: 0;
+                                background: url(../images/icons/button-arrow-icon-black.svg) center no-repeat;
+                                background-size: contain;
+                            }
+
+                            span {
+                                display: inline-block;
+                                transition: transform 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+                                will-change: transform;
+                                transition-property: transform;
+                            }
                         }
                     }
                 }

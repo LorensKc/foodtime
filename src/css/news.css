@@ -1,5 +1,10 @@
 .g-container .g-content {
-  padding: 0 0 350px;
+  padding: 0 0 260px;
+}
+@media (max-width: 320px) {
+  .g-container .g-content {
+    padding: 0 0 300px;
+  }
 }
 .g-container .g-content .content-view .inner .block-header {
   padding-top: 124px;
@@ -8,7 +13,6 @@
   display: inline-block;
 }
 .g-container .g-content .content-view .inner .news-wrap {
-  max-width: 1200px;
   margin: 0 auto;
   padding-bottom: 143px;
 }
@@ -45,12 +49,12 @@
   transform: none;
 }
 .g-container .g-content .content-view .inner .news-wrap .news-content .news-info-container .news-title {
-  padding-bottom: 38px;
+  padding-bottom: 28px;
 }
 .g-container .g-content .content-view .inner .news-wrap .news-content .news-info-container .news-title h1 {
   font-size: 48px;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 1em;
 }
 .g-container .g-content .content-view .inner .news-wrap .news-content .news-info-container .news-title.animate-element {
   opacity: 0;
@@ -62,7 +66,7 @@
   transform: none;
 }
 .g-container .g-content .content-view .inner .news-wrap .news-content .news-info-container .news-desc {
-  padding-bottom: 80px;
+  padding-bottom: 70px;
 }
 .g-container .g-content .content-view .inner .news-wrap .news-content .news-info-container .news-desc .desc,
 .g-container .g-content .content-view .inner .news-wrap .news-content .news-info-container .how-to-cook .desc {
@@ -85,7 +89,7 @@
 }
 .g-container .g-content .content-view .inner .news-wrap .news-content .news-info-container .ingredients .subtitle,
 .g-container .g-content .content-view .inner .news-wrap .news-content .news-info-container .how-to-cook .subtitle {
-  padding-bottom: 28px;
+  padding-bottom: 22px;
   font-size: 30px;
   font-weight: 700;
   line-height: 24px;
@@ -94,17 +98,20 @@
 .g-container .g-content .content-view .inner .news-wrap .news-content .news-info-container .ingredients {
   padding-bottom: 57px;
 }
+.g-container .g-content .content-view .inner .news-wrap .news-content .news-info-container .ingredients ol,
 .g-container .g-content .content-view .inner .news-wrap .news-content .news-info-container .ingredients ul {
   display: flex;
   flex-direction: column;
-  list-style-image: url(../images/icons/circle-list.png);
-  list-style-position: outside;
   margin-left: 20px;
+  margin-bottom: 20px;
+  color: #8C4854;
 }
+.g-container .g-content .content-view .inner .news-wrap .news-content .news-info-container .ingredients ol li,
 .g-container .g-content .content-view .inner .news-wrap .news-content .news-info-container .ingredients ul li {
   display: list-item;
   padding: 5px 0 6px;
 }
+.g-container .g-content .content-view .inner .news-wrap .news-content .news-info-container .ingredients ol li span,
 .g-container .g-content .content-view .inner .news-wrap .news-content .news-info-container .ingredients ul li span {
   color: #8c8c8c;
   font-size: 16px;

@@ -37,12 +37,10 @@
     <link href="css/owl.theme.default.min.css" rel="stylesheet">
     <!-- Style -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
-    <link href="css/rest-list.css" rel="stylesheet">
-    <link href="css/nice-select.css" rel="stylesheet">
-    <link href="css/rangeslider.css" rel="stylesheet">
-    <link href="css/index-media.css" rel="stylesheet">
+    <!-- <link href="css/rangeslider.css" rel="stylesheet">
+    <link href="css/nice-select.css" rel="stylesheet"> -->
+
 </head>
 
 <body>
@@ -123,10 +121,28 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="block">
                     <div class="inner">
                         <div class="current-pos">
-                            <span class="">Главная / Рестораны</span>
+                            <ul class="nav-links-cnt animate-element">
+                                <li>
+                                    <a href="index.html" class="link">Главная</a>
+                                </li>
+                                <li>
+                                    <a href="rest-list.html" class="link active">Рестораны</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block">
+                    <div class="inner">
+                        <div class="button-wrap filter-button" >
+                            <a class="btn filter" id="filter-button">
+                                <span>Фильтры</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -134,8 +150,8 @@
                 <div class="block">
                     <div class="inner">
                         <div class="rest-list-wrap">
-                            <div class="filters-wrap">
-                                <div class="menu-filter-list">
+                            <div class="filters-wrap" id="filters-wrap">
+                                <div class="menu-filter-list row-list">
                                     <div class="filter-title">Категории:</div>
                                     <div class="categories">
                                         <button class="rests active">Рестораны</button>
@@ -147,36 +163,28 @@
                                     <div class="filter-title">Фильтры:</div>
                                     <ul>
                                         <li>
-                                            <input type="checkbox" >
-                                            <span>Пицца</span>
+                                            <label><input type="checkbox">Пицца</label>
                                         </li>
                                         <li>
-                                            <input type="checkbox" >
-                                            <span>Суши</span>
+                                            <label><input type="checkbox" >Суши</label>
                                         </li>
                                         <li>
-                                            <input type="checkbox" >
-                                            <span>Бургеры</span>
+                                            <label><input type="checkbox" >Бургеры</label>
                                         </li>
                                         <li>
-                                            <input type="checkbox" >
-                                            <span>Шашлык</span>
+                                            <label><input type="checkbox" >Шашлык</label>
                                         </li>
                                         <li>
-                                            <input type="checkbox" >
-                                            <span>Китайская кухня</span>
+                                            <label><input type="checkbox" >Китайская кухня</label>
                                         </li>
                                         <li>
-                                            <input type="checkbox" >
-                                            <span>Европейская кухня</span>
+                                            <label><input type="checkbox" >Европейская кухня</label>
                                         </li>
                                         <li>
-                                            <input type="checkbox" >
-                                            <span>Украинская кухня</span>
+                                            <label><input type="checkbox" >Украинская кухня</label>
                                         </li>
                                         <li>
-                                            <input type="checkbox" >
-                                            <span>Пироги</span>
+                                            <label><input type="checkbox" >Пироги</label>
                                         </li>
                                     </ul>
                                     <div class="nav-buttons">
@@ -189,26 +197,20 @@
                                     <div class="filter-title">Критерии:</div>
                                     <ul>
                                         <li>
-                                            <input type="checkbox">
-                                            <span>Бесплатная доставка</span>
+                                            <label><input type="checkbox">Бесплатная доставка</label>
                                         </li>
                                         <li>
-                                            <input type="checkbox">
-                                            <span>Акции</span>
+                                            <label><input type="checkbox">Акции</label>
                                         </li>
                                         <li>
-                                            <input type="checkbox">
-                                            <span>Оплата картой-онлайн</span>
+                                            <label><input type="checkbox">Оплата картой-онлайн</label>
                                         </li>
                                         <li>
-                                            <input type="checkbox">
-                                            <span>Оплата картой курьеру</span>
+                                            <label><input type="checkbox">Оплата картой курьеру</label>
                                         </li>
                                         <li>
-                                            <input type="checkbox">
-                                            <span>Новые</span>
+                                            <label><input type="checkbox">Новые</label>
                                         </li>
-                                
                                     </ul>
                                     <div class="nav-buttons">
                                         <button>Применить</button>
@@ -257,8 +259,8 @@
                                             <option value="4">test option 4</option>
                                         </select>
                                         <div class="filter-tabs">
-                                            <a href="#" class="left-tab active">Все</a>
-                                            <a href="#" class="right-tab">Открытые</a>
+                                            <button href="#" class="left-tab active">Все</button>
+                                            <button href="#" class="right-tab">Открытые</button>
                                         </div>
                                     </div>
                                 </div>
@@ -289,7 +291,7 @@
                                                 </div>
                                                 <div class="right-info">
                                                     <span class="time">10:00 - 02:00</span>
-                                                    <span class="reviews">377 отзывов</span>
+                                                    <a href="#" class="reviews">377 отзывов</a>
                                                 </div>
                                             </div>
                                             <div class="bot-info-cont">
@@ -333,7 +335,7 @@
                                                 </div>
                                                 <div class="right-info">
                                                     <span class="time">10:00 - 02:00</span>
-                                                    <span class="reviews">377 отзывов</span>
+                                                    <a href="#" class="reviews">377 отзывов</a>
                                                 </div>
                                             </div>
                                             <div class="bot-info-cont">
@@ -375,7 +377,7 @@
                                                 </div>
                                                 <div class="right-info">
                                                     <span class="time">10:00 - 02:00</span>
-                                                    <span class="reviews">377 отзывов</span>
+                                                    <a href="#" class="reviews">377 отзывов</a>
                                                 </div>
                                             </div>
                                             <div class="bot-info-cont">
@@ -417,7 +419,7 @@
                                                 </div>
                                                 <div class="right-info">
                                                     <span class="time">10:00 - 02:00</span>
-                                                    <span class="reviews">377 отзывов</span>
+                                                    <a href="#" class="reviews">377 отзывов</a>
                                                 </div>
                                             </div>
                                             <div class="bot-info-cont">
@@ -441,37 +443,27 @@
         <footer class="g-footer animate-element">
             <div class="footer-content">
                 <div class="inner footer-wrap text-white">
+        
+                    <div class="copyright-wrap">
+                        <div class="footer-copyright">© 2018 Food Time. Все права защищены.</div>
+                        <div class="footer-working">Разработка и поддержка<a href="#" target="_blank">Melon D&D</a></div>
+                    </div>
+        
                     <div class="footer-copyright">© 2018 Food Time. Все права защищены.</div>
                     <div class="footer-menu">
                         <nav class="menu-wrap">
                             <ul>
-                                <li>
-                                    <a href="rest-list.html">Все рестораны</a>
-                                </li>
-                                <li>
-                                    <a href="rest-list.html">Все магазины</a>
-                                </li>
-                                <li>
-                                    <a href="about.html">О сервисе</a>
-                                </li>
-                                <li>
-                                    <a href="#">Сотрудничество</a>
-                                </li>
-                                <li>
-                                    <a href="#">Правила сервиса</a>
-                                </li>
-                                <li>
-                                    <a href="news.html">Новости и статьи</a>
-                                </li>
-                                <li>
-                                    <a href="support-form.html">Служба поддержки</a>
-                                </li>
+                                <li><a href="rest-list.html">Все рестораны</a></li>
+                                <li><a href="rest-list.html">Все магазины</a></li>
+                                <li><a href="about.html">О сервисе</a></li>
+                                <li><a href="#">Сотрудничество</a></li>
+                                <li><a href="#">Правила сервиса</a></li>
+                                <li><a href="news.html">Новости и статьи</a></li>
+                                <li><a href="support-form.html">Служба поддержки</a></li>
                             </ul>
                         </nav>
                     </div>
-                    <div class="footer-working">Разработка и поддержка
-                        <a href="#" target="_blank">Melon D&D</a>
-                    </div>
+                    <div class="footer-working">Разработка и поддержка<a href="#" target="_blank">Melon D&D</a></div>
                 </div>
             </div>
         </footer>
@@ -480,26 +472,29 @@
     <div class="trash-window" id="trash-window">
         <div class="trash-window-overlay"></div>
         <div class="trash-window-modal-overlay">
-             <div class="trash-window-modal" id="trash-window-modal">
-                 <div class="trash-modal-title">
-                     <p>Оформление заказа</p>
-                 </div>
-                 <div class="trash-modal-form">
-                     <div class="trash-modal-form-inner trash-modal-form-left">
+            <div class="trash-window-modal" id="trash-window-modal">
+                <div class="trash-modal-title">
+                    <p>Оформление заказа</p>
+                    <button type="button" class="close-trash" id="close-trash"></button>
+                </div>
+                <div class="trash-modal-form">
+                    <div class="trash-modal-form-inner trash-modal-form-left">
                         <div class="trash-modal-form-left-inners">
                             <div class="general-info-wrap">
-                                <div class="trash-modal-form-left-inner">
-                                    <label class="modal-input-label" for="modal-input-name">Имя:</label>
-                                    <input type="text" name="name" class="modal-input normal-width" id="modal-input-name">
-                                </div>
-                                <div class="trash-modal-form-left-inner">
-                                    <label class="modal-input-label" for="modal-input-tel">Телефон:</label>
-                                    <input type="text" name="name" class="modal-input normal-width" id="modal-input-tel">
-                                </div>
-                                <div class="trash-modal-form-left-inner">
-                                    <label class="modal-input-label" for="modal-input-email">Email:</label>
-                                    <input type="text" name="name" class="modal-input normal-width" id="modal-input-email">
-                                </div>
+                                <form action="#" method="POST" id="support-form" class="support-form animate-element">
+                                    <div class="trash-modal-form-left-inner">
+                                        <label class="modal-input-label" for="name_field">Имя:</label>
+                                        <input type="text" class="common_field modal-input normal-width" name="name" id="name_field" maxlength="50">
+                                    </div>
+                                    <div class="trash-modal-form-left-inner">
+                                        <label class="modal-input-label" for="email_field">Email:</label>
+                                        <input type="email" class="common_field modal-input normal-width" name="email" id="email_field" maxlength="50">
+                                    </div>
+                                    <div class="trash-modal-form-left-inner">
+                                        <label class="modal-input-label" for="phone_field">Телефон:</label>
+                                        <input type="tel" class="common_field modal-input normal-width" name="phone" id="phone_field" maxlength="20">
+                                    </div>
+                                </form>
                                 <div class="checkbox-wrap">
                                     <input type="checkbox" name="" id="no-email">
                                     <label for="no-email">Не хочу оставлять свой Email</label>
@@ -526,7 +521,7 @@
                                         <option value="">PayPal</option>
                                         <option value="">Приват24</option>
                                     </select>
-                                    
+    
                                 </div>
                                 <div class="trash-modal-form-left-inner auto-width">
                                     <label class="modal-input-label" for="modal-input-email">Сдача с:</label>
@@ -538,29 +533,43 @@
                         <div class="trash-modal-form-left-button">
                             <button type="button" class="modal-button">Оформить заказ</button>
                         </div>
-                     </div>
+                    </div>
                     <div class="trash-modal-form-inner trash-modal-form-right">
                         <div class="form-right-title">
                             <div class="title">Ваш заказ</div>
-                            <button class="edit-btn">Редактировать</button>
+                            <div class="button-container">
+                                <a href="#" class="edit-btn">
+                                    <span class="btn-text">
+                                        Редактировать
+                                    </span>
+                                </a>
+                            </div>
                         </div>
                         <div class="price-list-container">
                             <ul>
                                 <li class="price-item">
-                                    <div class="item-name">Лапша “Удон с курицей” 350г</div>
-                                    <div class="item-cost">127. 00 <span>грн</span></div>
+                                    <a href="#" class="item-name">Лапша “Удон с курицей” 350г</a>
+                                    <div class="item-cost">127. 00
+                                        <span>грн</span>
+                                    </div>
                                 </li>
                                 <li class="price-item">
-                                    <div class="item-name">Лапша “Удон с курицей” 350г</div>
-                                    <div class="item-cost">127. 00 <span>грн</span></div>
+                                    <a href="#" class="item-name">Лапша “Удон с курицей” 350г</a>
+                                    <div class="item-cost">127. 00
+                                        <span>грн</span>
+                                    </div>
                                 </li>
                                 <li class="price-item">
-                                    <div class="item-name">Лапша “Удон с курицей” 350г</div>
-                                    <div class="item-cost">127. 00 <span>грн</span></div>
+                                    <a href="#" class="item-name">Лапша “Удон с курицей” 350г</a>
+                                    <div class="item-cost">127. 00
+                                        <span>грн</span>
+                                    </div>
                                 </li>
                                 <li class="price-item">
-                                    <div class="item-name">Лапша “Удон с курицей” 350г</div>
-                                    <div class="item-cost">127. 00 <span>грн</span></div>
+                                    <a href="#" class="item-name">Лапша “Удон с курицей” 350г</a>
+                                    <div class="item-cost">127. 00
+                                        <span>грн</span>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -579,17 +588,19 @@
                             </div>
                         </div>
                     </div>
-                 </div>
-             </div>
-             <button type="button" class="close-trash" id="close-trash">Close</button>
+                </div>
+            </div>
         </div>
     </div>
+
     <script src="js/jquery.min.js"></script>
     <script src="js/rangeslider.js" defer></script>
     <script src="js/jquery.nice-select.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/vendor/wow.min.js"></script>
+    <script src="js/babel.js"></script>
     <script src="js/index.js"></script>
+
 </body>
 
 </html>

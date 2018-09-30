@@ -9,6 +9,10 @@
                     padding-bottom: 60px;
                 }
 
+                .filter-button {
+                    display: none;
+                }
+
                 .current-pos {
                     display: flex;
                     justify-content: center;
@@ -28,6 +32,10 @@
                         width: 21%;
                         margin: 0px 0px 0 0;
                         padding: 38px 0px 0 30px;
+
+                        &.open {
+                            display: flex;
+                        }
 
                         .menu-filter-list { 
                             display: flex;
@@ -64,10 +72,21 @@
                                     background: transparent;
                                     outline: none;
                                     cursor: pointer;
+                                    transform: none;
+                                    transition: .4s cubic-bezier(0.4, 0, 0, 1);
+                                    will-change: transform,  transition;
+
+                                    &:hover {
+                                        color: #b95d71;
+                                        transform: scale(1.1);
+                                    }
+
                                     &.active {
                                         color: #652533;
                                         font-weight: 700;
+                                        pointer-events: none;
                                     }
+                                    
                                 }
                             }
 
@@ -81,22 +100,24 @@
                                     justify-content: flex-start;
                                     align-items: center;
 
-                                    input { 
-                                        width: 12px;
-                                        height: 12px;
-                                        margin: 0 26px 0 0px;
-                                        border: 1px solid #7d4a55;
-                                        background-color: #f6f6f6;
-                                        cursor: pointer;
-                                        -webkit-appearance: checkbox;
-                                        -moz-appearance: checkbox;
-                                    }
-
-                                    span { 
+                                    label {
                                         font-size: 16px;
                                         font-weight: 100;
                                         line-height: 32px;
                                         letter-spacing: 0.32px;
+                                        cursor: pointer;
+                                        
+
+                                        input { 
+                                            width: 12px;
+                                            height: 12px;
+                                            margin: 0 26px 0 0px;
+                                            border: 1px solid #7d4a55;
+                                            background-color: #f6f6f6;
+                                            cursor: pointer;
+                                            -webkit-appearance: checkbox;
+                                            -moz-appearance: checkbox;
+                                        }
                                     }
                                 }
                             }
@@ -121,6 +142,15 @@
                                     font-size: 15px;
                                     font-weight: 100;
                                     letter-spacing: 0.3px;
+                                    transform: none;
+                                    transition: .4s cubic-bezier(0.4, 0, 0, 1);
+                                    will-change: transform,  transition;
+
+
+                                    &:hover {
+                                        color: #b95d71;
+                                        transform: scale(1.1);
+                                    }
                                 }
                             }
                         }
@@ -169,23 +199,39 @@
                                     font-weight: 400;
                                     line-height: 32px;
                                     letter-spacing: 0.32px;
+
+                                    // &.open {
+                                    //     border-radius: 5px 5px 0 0;
+                                    //     box-shadow: 0 -3px 18px 3px rgba(101, 37, 51, 0.5);
+                                    //     box-sizing: border-box;
+                                    // }
                                 }
 
                                 .filter-tabs {
                                     margin: 0 0 0 66px;
                                     
-                                    a {
+                                    button {
                                         margin: 0 5px;
                                         color: #000000;
                                         font-size: 16px;
                                         font-weight: 100;
                                         line-height: 32px;
                                         letter-spacing: 0.32px;
-                                        text-decoration: none;
+                                        background: none;
+                                        border: none;
+                                        cursor: pointer;
+                                        transition: .4s cubic-bezier(0.4, 0, 0, 1);
+                                        will-change: transform,  transition;
+
+                                        &:hover {
+                                            color: #b95d71;
+                                            transform: scale(1.1);
+                                        }
 
                                         &.active {
                                             color: #652533;
                                             font-weight: 700;
+                                            pointer-events: none;
                                         }
                                     }    
                                 }
@@ -209,8 +255,13 @@
                                 border-radius: 4px;
                                 background-color: #ffffff;
                                 box-sizing: border-box;
-                                box-shadow: 0 6px 15px 0 rgba(0,0,0,0.26);
+                                box-shadow: 0 6px 15px 0 rgba(101, 37, 51, .5);
                                 text-decoration: none;
+                                transition: .6s cubic-bezier(0.4, 0, 0, 1);
+
+                                &:hover {
+                                    box-shadow: 0 6px 15px 8px rgba(101, 37, 51, 0.5);
+                                }
 
                                 // &:nth-child(2), &:nth-child(4) {
                                 //     .image {
@@ -227,6 +278,7 @@
                                     // padding: 38px 0 2px;
                                     box-sizing: border-box;
                                     text-align: center;
+                                    cursor: pointer;
                                     
                                     img {
                                         width: 100%;
@@ -256,6 +308,10 @@
                                                 margin: 0 0 8px;
                                                 font-size: 18px;
                                                 font-weight: 700;
+                                                
+                                                &:hover {
+                                                    color: rgba(16, 16, 16, .7);
+                                                }
                                             }
 
                                             ul { 
@@ -294,6 +350,17 @@
                                                     height: 16px;
                                                     background-image: url('../images/icons/time-ico.png');
                                                     background-repeat: no-repeat;
+                                                }
+                                            }
+
+                                            .reviews {
+                                                transition: transform ease .4s;
+                                                transform: none;
+                                                will-change: transform;
+                                                transition-property: transform;
+
+                                                &:hover {
+                                                    transform: scale(1.1);
                                                 }
                                             }
                                         }

@@ -26,10 +26,9 @@
     <link href="css/owl.carousel.min.css" rel="stylesheet">
     <link href="css/owl.theme.default.min.css" rel="stylesheet"><!-- Style -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-    <link href="css/index.css" rel="stylesheet"><!-- Script -->
-    <link href="css/index-media.css" rel="stylesheet"><!-- Script -->
+    <link href="css/index.css" rel="stylesheet">
   </head>
+
   <body>
     <div class="g-container _bg-home main-page">
       <header class="g-header is-fixed animate-element" id="buttonSearch">
@@ -103,25 +102,63 @@
             </div>
             <!-- /.inner-->
           </div>
-          <!-- /.block-->
+
           <div class="block">
             <div class="inner _align-center">
-              <div class="button-wrap animate-element">
-                <a href="rest-list.html" class="btn"><span>Рестораны</span></a>
-                <a href="rest-list.html" class="btn _bg"><span>Магазины</span></a>
+              <div id="tab-button" class="button-wrap animate-element">
+                <a class="btn active"><span>Рестораны</span></a>
+                <a class="btn"><span>Магазины</span></a>
               </div>
               <!-- /.button-wrap-->
             </div>
             <!-- /.inner-->
           </div>
-          <!-- /.block-->
+
           <div class="block">
             <div class="inner width-2">
-              <div class="food-wrap">
-                <div class="item  animate-element" data-animate-element-delay="0.5s"><a href="#">
+              <div class="food-wrap active">
+                <div class="item  animate-element" data-animate-element-delay="0.5s"><a href="rest-list.html">
                     <div class="image-wrap"><img src="images/food/item_1.png" alt=""></div>
                     <div class="content-wrap">
                       <div class="title">Все рестораны</div>
+                      <div class="desc">66 заведений I 8824 блюда</div>
+                    </div></a></div>
+                <div class="item  animate-element" data-animate-element-delay="0.666667s"><a href="#">
+                    <div class="image-wrap"><img src="images/food/item_2.png" alt=""></div>
+                    <div class="content-wrap">
+                      <div class="title">Пицца</div>
+                      <div class="desc">66 заведений I 8824 блюда</div>
+                    </div></a></div>
+                <div class="item  animate-element" data-animate-element-delay="0.833333s"><a href="#">
+                    <div class="image-wrap"><img src="images/food/item_3.png" alt=""></div>
+                    <div class="content-wrap">
+                      <div class="title">Бургеры</div>
+                      <div class="desc">66 заведений I 8824 блюда</div>
+                    </div></a></div>
+                <div class="item  animate-element" data-animate-element-delay="1s"><a href="#">
+                    <div class="image-wrap"><img src="images/food/item_4.png" alt=""></div>
+                    <div class="content-wrap">
+                      <div class="title">Суши</div>
+                      <div class="desc">66 заведений I 8824 блюда</div>
+                    </div></a></div>
+                <div class="item  animate-element" data-animate-element-delay="1.166668s"><a href="#">
+                    <div class="image-wrap"><img src="images/food/item_5.png" alt=""></div>
+                    <div class="content-wrap">
+                      <div class="title">Лапша</div>
+                      <div class="desc">66 заведений I 8824 блюда</div>
+                    </div></a></div>
+                <div class="item  animate-element" data-animate-element-delay="1.333335s"><a href="#">
+                    <div class="image-wrap"><img src="images/food/item_6.png" alt=""></div>
+                    <div class="content-wrap">
+                      <div class="title">Индийская кухня</div>
+                      <div class="desc">66 заведений I 8824 блюда</div>
+                    </div></a></div>
+              </div>
+              <div class="food-wrap">
+                <div class="item  animate-element" data-animate-element-delay="0.5s"><a href="rest-list.html">
+                    <div class="image-wrap"><img src="images/food/item_1.png" alt=""></div>
+                    <div class="content-wrap">
+                      <div class="title">Все  магазины</div>
                       <div class="desc">66 заведений I 8824 блюда</div>
                     </div></a></div>
                 <div class="item  animate-element" data-animate-element-delay="0.666667s"><a href="#">
@@ -159,7 +196,7 @@
             </div>
             <!-- /.inner-->
           </div>
-          <!-- /.block-->
+
           <div class="block">
             <div class="inner">
               <div class="block-header _align-center  ">
@@ -169,7 +206,7 @@
             </div>
             <!-- /.inner-->
           </div>
-          <!-- /.block-->
+
           <div class="block">
             <div class="inner">
               <div class="carousel-wrap animate-element">
@@ -223,7 +260,7 @@
             </div>
             <!-- /.inner-->
           </div>
-          <!-- /.block-->
+
           <div class="block">
             <div class="inner">
               <div class="block-header _align-center">
@@ -233,10 +270,10 @@
             </div>
             <!-- /.inner-->
           </div>
-          <!-- /.block-->
+
           <div class="block">
-            <div class="inner">
-              <div class="restaurants-wrap">
+            <div class="inner rest-slider-cnt">
+              <div class="restaurants-wrap desktop-wrap">
                 <div class="item  animate-element" data-animate-element-delay="0.5s">
                   <a href="about-restorants.html" class="image-wrap"><img src="images/restaurants/cooper.png" alt=""></a>
                   <div class="rating-wrap">
@@ -280,25 +317,88 @@
                   </div><a class="reviews" href="#">497 отзывов</a>
                 </div>
               </div>
+
+              <div class="loop owl-carousel restaurants-slider">
+                <div class="item  animate-element">
+                  <a href="about-restorants.html" class="image-wrap">
+                    <img src="images/restaurants/cooper.png" alt="">
+                  </a>
+                  <div class="rating-wrap">
+                    <div class="rating" style="background-color: #986d76; width: 50%;"></div>
+                  </div>
+                  <a class="reviews" href="#">497 отзывов</a>
+                </div>
+                <div class="item  animate-element">
+                  <a href="about-restorants.html" class="image-wrap">
+                    <img src="images/restaurants/g_plus.png" alt="">
+                  </a>
+                  <div class="rating-wrap">
+                    <div class="rating" style="background-color: #986d76; width: 50%;"></div>
+                  </div>
+                  <a class="reviews" href="#">497 отзывов</a>
+                </div>
+                <div class="item  animate-element">
+                  <a href="about-restorants.html" class="image-wrap">
+                    <img src="images/restaurants/veggie_people.png" alt="">
+                  </a>
+                  <div class="rating-wrap">
+                    <div class="rating" style="background-color: #986d76; width: 50%;"></div>
+                  </div>
+                  <a class="reviews" href="#">497 отзывов</a>
+                </div>
+                <div class="item  animate-element">
+                  <a href="about-restorants.html" class="image-wrap">
+                    <img src="images/restaurants/mister_cat.png" alt="">
+                  </a>
+                  <div class="rating-wrap">
+                    <div class="rating" style="background-color: #986d76; width: 50%;"></div>
+                  </div>
+                  <a class="reviews" href="#">497 отзывов</a>
+                </div>
+                <div class="item  animate-element">
+                  <a href="about-restorants.html" class="image-wrap">
+                    <img src="images/restaurants/pizza.png" alt="">
+                  </a>
+                  <div class="rating-wrap">
+                    <div class="rating" style="background-color: #986d76; width: 50%;"></div>
+                  </div>
+                  <a class="reviews" href="#">497 отзывов</a>
+                </div>
+                <div class="item  animate-element">
+                  <a href="about-restorants.html" class="image-wrap">
+                    <img src="images/restaurants/pesto_cafe.png" alt="">
+                  </a>
+                  <div class="rating-wrap">
+                    <div class="rating" style="background-color: #986d76; width: 50%;"></div>
+                  </div>
+                  <a class="reviews" href="#">497 отзывов</a>
+                </div>
+                <div class="item  animate-element">
+                  <a href="about-restorants.html" class="image-wrap">
+                    <img src="images/restaurants/web_food.png" alt="">
+                  </a>
+                  <div class="rating-wrap">
+                    <div class="rating" style="background-color: #986d76; width: 50%;"></div>
+                  </div>
+                  <a class="reviews" href="#">497 отзывов</a>
+                </div>
+              </div>
               <!-- /.restaurants-wrap-->
               <div class="button-wrap _align-center  animate-element" data-animate-element-delay="1s">
                 <a href="rest-list.html" class="btn _bg"><span>Все рестораны</span></a>
               </div>
               <!-- /.button-wrap-->
             </div>
-            <!-- /.inner-->
           </div>
-          <!-- /.block-->
+
           <div class="block">
             <div class="inner">
               <div class="block-header _align-center ">
                 <div class="title-h1 animate-element">Новости и статьи</div>
               </div>
-              <!-- /.block-header-->
             </div>
-            <!-- /.inner-->
           </div>
-          <!-- /.block-->
+
           <div class="block">
             <div class="inner">
               <div class="news-wrap">
@@ -331,11 +431,12 @@
                   </div>
                 </div>
               </div>
-              <!-- /.news-wrap-->
+
+              <div class="button-wrap _align-center  animate-element" data-animate-element-delay="1s">
+                <a href="news.html" class="btn _bg"><span>Все новости</span></a>
+              </div>
             </div>
-            <!-- /.inner-->
           </div>
-          <!-- /.block-->
           <div class="block">
             <div class="inner">
               <div class="block-about  animate-element">
@@ -345,13 +446,18 @@
             </div>
             <!-- /.inner-->
           </div>
-          <!-- /.block-->
         </section>
       </main>
 
       <footer class="g-footer animate-element">
         <div class="footer-content">
           <div class="inner footer-wrap text-white">
+            
+            <div class="copyright-wrap">
+              <div class="footer-copyright">© 2018 Food Time. Все права защищены.</div>
+              <div class="footer-working">Разработка и поддержка<a href="#" target="_blank">Melon D&D</a></div>
+            </div>
+
             <div class="footer-copyright">© 2018 Food Time. Все права защищены.</div>
             <div class="footer-menu">
               <nav class="menu-wrap">
@@ -372,29 +478,33 @@
       </footer>
 
     </div>
+
     <div class="trash-window" id="trash-window">
       <div class="trash-window-overlay"></div>
       <div class="trash-window-modal-overlay">
         <div class="trash-window-modal" id="trash-window-modal">
           <div class="trash-modal-title">
             <p>Оформление заказа</p>
+            <button type="button" class="close-trash" id="close-trash"></button>
           </div>
           <div class="trash-modal-form">
             <div class="trash-modal-form-inner trash-modal-form-left">
               <div class="trash-modal-form-left-inners">
                 <div class="general-info-wrap">
-                  <div class="trash-modal-form-left-inner">
-                    <label class="modal-input-label" for="modal-input-name">Имя:</label>
-                    <input type="text" name="name" class="modal-input normal-width" id="modal-input-name">
-                  </div>
-                  <div class="trash-modal-form-left-inner">
-                    <label class="modal-input-label" for="modal-input-tel">Телефон:</label>
-                    <input type="text" name="name" class="modal-input normal-width" id="modal-input-tel">
-                  </div>
-                  <div class="trash-modal-form-left-inner">
-                    <label class="modal-input-label" for="modal-input-email">Email:</label>
-                    <input type="text" name="name" class="modal-input normal-width" id="modal-input-email">
-                  </div>
+                  <form action="#" method="POST" id="support-form" class="support-form animate-element">
+                    <div class="trash-modal-form-left-inner">
+                      <label class="modal-input-label" for="name_field">Имя:</label>
+                      <input type="text" class="common_field modal-input normal-width" name="name" id="name_field" maxlength="50">
+                    </div>
+                    <div class="trash-modal-form-left-inner">
+                      <label class="modal-input-label" for="email_field">Email:</label>
+                      <input type="email" class="common_field modal-input normal-width" name="email" id="email_field" maxlength="50">
+                    </div>
+                    <div class="trash-modal-form-left-inner">
+                      <label class="modal-input-label" for="phone_field">Телефон:</label>
+                      <input type="tel" class="common_field modal-input normal-width" name="phone" id="phone_field" maxlength="20">
+                    </div>
+                  </form>
                   <div class="checkbox-wrap">
                     <input type="checkbox" name="" id="no-email">
                     <label for="no-email">Не хочу оставлять свой Email</label>
@@ -437,30 +547,36 @@
             <div class="trash-modal-form-inner trash-modal-form-right">
               <div class="form-right-title">
                 <div class="title">Ваш заказ</div>
-                <button class="edit-btn">Редактировать</button>
+                <div class="button-container">
+                  <a href="#" class="edit-btn">
+                    <span class="btn-text">
+                      Редактировать
+                    </span>
+                  </a>
+                </div>
               </div>
               <div class="price-list-container">
                 <ul>
                   <li class="price-item">
-                    <div class="item-name">Лапша “Удон с курицей” 350г</div>
+                    <a href="#" class="item-name">Лапша “Удон с курицей” 350г</a>
                     <div class="item-cost">127. 00
                       <span>грн</span>
                     </div>
                   </li>
                   <li class="price-item">
-                    <div class="item-name">Лапша “Удон с курицей” 350г</div>
+                    <a href="#" class="item-name">Лапша “Удон с курицей” 350г</a>
                     <div class="item-cost">127. 00
                       <span>грн</span>
                     </div>
                   </li>
                   <li class="price-item">
-                    <div class="item-name">Лапша “Удон с курицей” 350г</div>
+                    <a href="#" class="item-name">Лапша “Удон с курицей” 350г</a>
                     <div class="item-cost">127. 00
                       <span>грн</span>
                     </div>
                   </li>
                   <li class="price-item">
-                    <div class="item-name">Лапша “Удон с курицей” 350г</div>
+                    <a href="#" class="item-name">Лапша “Удон с курицей” 350г</a>
                     <div class="item-cost">127. 00
                       <span>грн</span>
                     </div>
@@ -484,14 +600,15 @@
             </div>
           </div>
         </div>
-        <button type="button" class="close-trash" id="close-trash">Close</button>
       </div>
     </div>
+
     <script src="js/jquery.min.js"></script>
     <script src="js/rangeslider.js" defer></script>
     <script src="js/jquery.nice-select.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/vendor/wow.min.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/babel.js"></script>
   </body>
+
 </html>

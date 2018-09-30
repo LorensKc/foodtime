@@ -1,34 +1,15 @@
 .g-container {
     .g-content {
-        padding: 0 0 350px;
+        padding: 0 0 260px;
+        @media (max-width: 320px) {
+            padding: 0 0 300px;
+        }
         
         .content-view {
             .inner {
                 .block-header {
                     padding-top: 124px;
                 }
-
-                // .current-pos {
-                //     display: flex;
-                //     justify-content: center;
-                //     padding: 0 0 46px;
-
-                //     span {
-                //         color: #652533;
-                //         font-size: 16px;
-                //         font-weight: 100;
-
-                //         &.animate-element {
-                //             opacity: 0;
-                //             transform: translateY(50%) scale(.8);
-                //             transition: 1.3s cubic-bezier(.4,0,0,1);
-                //             &.active {
-                //                 opacity: 1;
-                //                 transform: none;
-                //             }
-                //         }
-                //     }
-                // }
 
                 &.more-dnwl {
                     .button-container {
@@ -38,7 +19,7 @@
                 }
                 
                 .news-wrap {
-                    max-width: 1200px;
+                    // max-width: 1200px;
                     margin: 0 auto;
                     padding-bottom: 143px;
 
@@ -83,12 +64,12 @@
                             }
 
                             .news-title {
-                                padding-bottom: 38px;
+                                padding-bottom: 28px;
 
                                 h1 {
                                     font-size: 48px;
                                     font-weight: 700;
-                                    line-height: 24px;
+                                    line-height: 1em;
                                 }
 
                                 &.animate-element {
@@ -103,7 +84,7 @@
                             }
 
                             .news-desc {
-                                padding-bottom: 80px;
+                                padding-bottom: 70px;
                             }
 
                             .news-desc, .how-to-cook {
@@ -128,7 +109,7 @@
 
                             .ingredients, .how-to-cook {
                                 .subtitle {
-                                    padding-bottom: 28px;
+                                    padding-bottom: 22px;
                                     font-size: 30px;
                                     font-weight: 700;
                                     line-height: 24px;
@@ -139,12 +120,14 @@
                             .ingredients {
                                 padding-bottom: 57px;
 
-                                ul {
+                                ol, ul {
                                     display: flex;
                                     flex-direction: column;
-                                    list-style-image: url(../images/icons/circle-list.png);
-                                    list-style-position: outside;
+                                    // list-style-image: url(../images/icons/circle-list.png);
+                                    // list-style-position: outside;
                                     margin-left: 20px;
+                                    margin-bottom: 20px;
+                                    color: #8C4854;
 
                                     li {
                                         display: list-item;

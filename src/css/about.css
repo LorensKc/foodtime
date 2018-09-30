@@ -115,9 +115,8 @@
 }
 .g-container .g-content .content-view .inner .about-description {
   max-width: 1200px;
-  padding: 0 255px 0 0px;
   margin: 0 auto 92px;
-  text-align: left;
+  text-align: justify;
   box-sizing: border-box;
 }
 .g-container .g-content .content-view .inner .about-description p {
